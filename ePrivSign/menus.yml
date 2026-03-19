@@ -1,0 +1,32 @@
+# Menu principal
+main:
+  name: '&8Conta do Discord'
+  size: 27
+  link-linked-slot: 12
+  discord-slot: 14
+  items:
+    link:
+      material: '{player}'
+      name: '&aMinha conta'
+      lore:
+        - ''
+        - ' &fConta vinculada: &7Nenhuma'
+        - ''
+        - '&aClique para vincular sua conta'
+    linked:
+      material: '{player}'
+      name: '&aMinha conta'
+      lore:
+        - ''
+        - ' &fConta vinculada: &7{discord_tag}'
+        - ' &fID da conta: &7{discord_id}'
+        - ''
+        - ' &fData da vinculação: &7{data} às {hora}'
+        - ''
+        - '&aClique para desvincular sua conta'
+    discord:
+      material: '4d42337be0bdca2128097f1c5bb1109e5c633c17926af5fb6fc20000011aeb53'
+      name: '&aDiscord do servidor'
+      lore:
+        - '&7Clique para entrar no discord'
+        - '&7do nosso servidor.'

@@ -1,0 +1,56 @@
+#
+#    /\/\   ___  ___ ___  __ _  __ _  ___  ___
+#   /    \ / _ \/ __/ __|/ _` |/ _` |/ _ \/ __|
+#  / /\/\ \  __/\__ \__ \ (_| | (_| |  __/\__ \
+#  \/    \/\___||___/___/\__,_|\__, |\___||___/
+#                              |___/
+# Mensagens gerais do plugin
+
+messages:
+  syntax: '&cUse: /{command} {syntax}'
+  permission: '&cVocê não tem permissão para isso.'
+  reload: '&aConfiguração recarregada com sucesso!'
+  console: '&cApenas jogadores in-game podem realizar esta ação.'
+  number: '&cO argumento não é um número.'
+  exit: '&aVocê saiu do tutorial!'
+  exit-set: '&aSaida definida com sucesso!'
+  exit-del: '&aSaida deletada com sucesso!'
+  location-set: '&aLocal definido com sucesso!'
+  location-del: '&aLocal deletado com sucesso!'
+  not-in: '&cVocê não está participando do tutorial!'
+  already-in: '&cVocê já está participando do tutorial!'
+  npc-set: '&aO npc do tutorial foi criado!'
+  npc-del: '&aO npc do tutorial foi removido!'
+  npc-no-del: '&cO npc do tutorial não está setado!'
+  steps-list:
+   - ''
+   - '&cPasso não encontrado.'
+   - '&cPassos disponíveis: &f{list}'
+   - ''
+  block-commands:
+   - ''
+   - '&aUtilize &7/tutorial sair&a para sair do tutorial.'
+   - '' 
+  help:
+   - ''
+   - '&aComandos disponíveis:'
+   - ''
+   - ' &8> &a/tutorial &8- &7Participa do tutorial.'
+   - ' &8> &a/tutorial sair &8- &7Sai do tutorial.'
+   - ' &8> &a/tutorial help &8- &7Exibe esta mensagem.'
+   - ''
+  help-Admin:
+   - ''
+   - '&aComandos disponíveis:'
+   - ''
+   - ' &8> &a/tutorial &8- &7Participa do tutorial.'
+   - ' &8> &a/tutorial sair &8- &7Sai do tutorial.'
+   - ' &8> &a/tutorial help &8- &7Exibe esta mensagem.'
+   - ' &8> &a/tutorial setsaida &8- &7Seta o local de saida do tutorial.'
+   - ' &8> &a/tutorial delsaida &8- &7Deleta o local de saida do tutorial.'
+   - ' &8> &a/tutorial setlocal &8- &7Seta um local de um passo.'
+   - ' &8> &a/tutorial dellocal &8- &7Deleta um local de um passo.'
+   - ' &8> &a/tutorial setnpc &8- &7Cria o npc do plugin.'
+   - ' &8> &a/tutorial delnpc &8- &7Deleta o npc do plugin.'
+   - ' &8> &a/tutorial reload &8- &7Recarrega as configurações do plugin.'
+   - ''

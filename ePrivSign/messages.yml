@@ -1,0 +1,47 @@
+#
+#    /\/\   ___  ___ ___  __ _  __ _  ___  ___
+#   /    \ / _ \/ __/ __|/ _` |/ _` |/ _ \/ __|
+#  / /\/\ \  __/\__ \__ \ (_| | (_| |  __/\__ \
+#  \/    \/\___||___/___/\__,_|\__, |\___||___/
+#                              |___/
+# Mensagens gerais do plugin
+
+messages:
+  permission: '&cVocê não possui permissão para isto.'
+  cancel: '&cVocê cancelou a operação'
+  reload: '&aConfiguração recarregada com sucesso!'
+  target: '&cJogador não encontrado.'
+  world-blacklisted: '&cVocê não pode proteger baús neste mundo!'
+  max-limit-private: '&cVocê atingiu o limite máximo de baús privados ({max}).'
+  max-limit-friend: '&cLimite máximo de amigos atingido ({max}).'
+  private: '&aBaú protegido com sucesso!'
+  private-others: '&aBaú protegido para &f{player} &acom sucesso!'
+  private-remove: '&aProteção removida com sucesso do baú (ID: &f{id}&a).'
+  sign-private: '&cQuebre a placa primeiro para remover a proteção do baú!'
+  sign-blocked: '&cVocê não pode quebrar a placa de outro jogador!'
+  chest-linked: '&aBaú vinculado à proteção existente (ID: &f{id}&a).'
+  chest-owner: '&cVocê não pode adicionar o dono como amigo!'
+  chest-permission: '&cVocê não tem permissão para acessar este baú!'
+  chest-not-found: '&cNenhum baú encontrado próximo à placa!'
+  chest-private: '&cEste baú já está protegido!'
+  chest-private-others: '&cVocê não tem permissão para quebrar este baú protegido!'
+  chest-blocked: '&cVocê não pode colocar um baú próximo a um baú protegido de outro jogador!'
+  self: '&cVocê não pode realizar esta operação em si mesmo.'
+  id-not-found: '&cBaú com ID &f{id} &cnão encontrado!'
+  friends-permission: '&cVocê não tem permissão para adicionar amigos a este baú!'
+  friend-has-access: '&cO jogador &f{player} &cjá tem acesso a este baú!'
+  friend-not-has-access: '&cO jogador &f{player} &cnão tem acesso a este baú!'
+  friend-add: '&aJogador &f{player} &afoi adicionado com sucesso ao baú (ID: &f{id}&a).'
+  friend-remove: '&aJogador &f{player} &afoi removido com sucesso do baú (ID: &f{id}&a).'
+  friend-add-digit:
+    - ''
+    - '&aDigite no chat o nome do seu amigo que deseja adicionar'
+    - '&7Para cancelar, digite &ncancelar&7.'
+    - ''
+  help:
+    - ''
+    - '&aComandos disponíveis:'
+    - ''
+    - ' &8> &a/privsign help &8- &7Exibe esta mensagem.'
+    - ' &8> &a/privsign reload &8- &7Recarrega as configurações do plugin.'
+    - ''

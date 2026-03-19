@@ -1,0 +1,37 @@
+#
+#    /\/\   ___  ___ ___  __ _  __ _  ___  ___
+#   /    \ / _ \/ __/ __|/ _` |/ _` |/ _ \/ __|
+#  / /\/\ \  __/\__ \__ \ (_| | (_| |  __/\__ \
+#  \/    \/\___||___/___/\__,_|\__, |\___||___/
+#                              |___/
+# Mensagens gerais do plugin
+
+messages:
+  syntax: '&cUse: /{command} {syntax}'
+  permission: '&cVocê não tem permissão para isso.'
+  reload: '&aConfiguração recarregada com sucesso!'
+  occurring: '&cJá existe um sorteio ocorrendo.'
+  no-players: '&cNão foi possível realizar o sorteio por falta de jogadores.'
+  no-occurring: '&cNão existe um sorteio ocorrendo.'
+  canceled: '&cO sorteio foi cancelado por um administrador.'
+  started: '&aSorteio iniciado com sucesso.'
+  stopped: '&aSorteio parado com sucesso.'
+  exists:
+    - ''
+    - '&cSorteio não encontrado.'
+    - '&cDisponíveis: &f{list}'
+    - ''
+  list:
+    - ''
+    - '&aSorteios Disponíveis: &f{list}'
+    - ''
+  help:
+    - ''
+    - '&aComandos disponíveis:'
+    - ''
+    - ' &8> &a/sorteio help &8- &7Exibe esta mensagem.'
+    - ' &8> &a/sorteio list &8- &7Ver todos os sorteios disponíveis.'
+    - ' &8> &a/sorteio iniciar <nome> &8- &7Iniciar um sorteio.'
+    - ' &8> &a/sorteio parar <nome> &8- &7Para um sorteio.'
+    - ' &8> &a/sorteio reload &8- &7Recarrega as configurações do plugin.'
+    - ''

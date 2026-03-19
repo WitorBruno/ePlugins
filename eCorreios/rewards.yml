@@ -1,0 +1,41 @@
+Rewards:
+  Reco1:
+    # Nome que aparecerá nas mensagens
+    Name: '&fPedra Mística'
+    # Item que aparecerá no preview do menu principal.
+    Preview:
+      Material: 'STONE'
+      Name: '&aPedra Mística'
+      Amount: 1
+      Glow: false
+      Lore:
+        - ''
+        - '&7Esta pedra vale muito dinheiro!'
+        - ''
+        - '&fQuantia: &a{quantia}'
+        - '&fEnviado por: &a{player}'
+        - '&fData do envio: &a{date} - {hour}'
+        - ''
+        - '&7Botão ESQUERDO: &fPara coletar 1x'
+        - '&7Botão SHIFT + ESQUERDO: &fPara coletar todos.'
+        - '&7Botão Q: &fPara deletar todos.'
+    # Só será dado o item se os comandos estiverem em false.
+    # Item que será dado ao jogador.
+    Item:
+      Material: 'STONE'
+      Name: '&8Pedra'
+      Amount: 1
+      Lore:
+        - '&aEu valho muito!'
+      # ENCHANT:LEVEL
+      # Caso não queira deixe:
+      # Enchants: []
+      Enchants:
+        - 'DURABILITY:1'
+    # Só será executado o comando se o "Use" estiver em true.
+    # Comandos que serão executados no jogador.
+    Command:
+      Use: false
+      # Para passar a quantia use {quantia} para executar o comando apenas 1x
+      List:
+        - 'give {player} stone 1'

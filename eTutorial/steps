@@ -1,0 +1,15 @@
+Steps:
+  location1: # Nome qualquer
+      # Order dos passos
+      Order: 1
+      # Localização desse passo
+      location: ''
+      # Tempo que o jogador vai ficar nesse passo
+      # (em segundos)
+      time: 10
+      # Mensagens ao chegar nesse passo
+      mensagens:
+        chat: [ '', '&aSeja bem vindo &7{player}&a, obrigado por entrar em nosso tutorial.', '&aA seguir irei lhe mostrar algumas warps.', '' ]
+        actionbar: '&aOlá &7{player}&a, bem vindo ao tutorial.'
+        title: '&aOlá &7{player}&a,<nl>&aconfira o chat.'
+        sound: 'ORB_PICKUP'

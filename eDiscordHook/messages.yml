@@ -1,0 +1,108 @@
+#
+#    /\/\   ___  ___ ___  __ _  __ _  ___  ___
+#   /    \ / _ \/ __/ __|/ _` |/ _` |/ _ \/ __|
+#  / /\/\ \  __/\__ \__ \ (_| | (_| |  __/\__ \
+#  \/    \/\___||___/___/\__,_|\__, |\___||___/
+#                              |___/
+# Mensagens gerais do plugin
+
+messages:
+  syntax: '&cUse: /{command} {syntax}'
+  permission: '&cVocê não tem permissão para isso.'
+  reload: '&aConfiguração recarregada com sucesso!'
+  console: '&cApenas jogadores in-game podem realizar esta ação.'
+  cancel: '&cVocê cancelou a ação.'
+  already-linked: '&cVocê já está vinculado.'
+  linked-in: '&cEste ID já está vinculado à {player}.'
+  not-linked: '&cVocê não está vinculado.'
+  not-linked-player: '&cO jogador &f{player}&c não está vinculado.'
+  target: '&cJogador &f{player} &cnão encontrado.'
+  already-linked-player: '&cO jogador &f{player}&c já está vinculado.'
+  no-request: '&cVocê não possui nenhuma solicitação de vinculação pendente.'
+  request-denied: '&cVocê recusou a solicitação de vinculação.'
+  request-denied-discord: 'O jogador **{player}** recusou a solicitação de vinculação de **{discord_tag}**.'
+  server-startup: '<a:green:1479873585307844768> **O Servidor foi Iniciado!** <a:green:1479873585307844768>'
+  server-shutdown: '<a:red:1479872918958772519> **O Servidor foi Desligado!** <a:red:1479872918958772519>'
+  valid:
+    - ''
+    - '&cVocê deve por um ID ou TAG válido.'
+    - '&7O ID é composto somente por números e com no mínimo 15 números.'
+    - ''
+  not-linked-chat:
+    - ''
+    - ' &aVocê precisa vincular sua conta do Discord para poder falar no chat!'
+    - ' &7Utilize &f/vinculardc&7 para vincular.'
+    - ''
+  linked-target:
+    - ''
+    - ' &aVocê vinculou com sucesso o discord do jogador &f{player}'
+    - ' &aConta: &f{discord_tag}'
+    - ' &aID: &f{discord_id}'
+    - ''
+  enter-id:
+    - ''
+    - ' &aDigite o ID do discord que deseja vincular.'
+    - ' &7para cancelar digite &ncancelar&7.'
+    - ''
+  unlinked:
+    - ''
+    - ' &aVocê desvinculou com sucesso o discord.'
+    - ' &aConta: &f{discord_tag}'
+    - ' &aID: &f{discord_id}'
+    - ''
+  linked:
+    - ''
+    - ' &aVocê vinculou com sucesso o discord.'
+    - ' &aConta: &f{discord_tag}'
+    - ' &aID: &f{discord_id}'
+    - ''
+  check:
+    - ''
+    - ' &aDigite o código enviado à sua DM para completar a verificação.'
+    - ' &7A verificação irá expirar em 1 minuto.'
+    - ''
+  info:
+    - ''
+    - ' &aInformações do jogador &f{player}:'
+    - ' &aConta: &f{discord_tag}'
+    - ' &aID: &f{discord_id}'
+    - ''
+  dm-blocked:
+    - ''
+    - ' &cNão foi possível enviar o código!'
+    - ' &7Habilite as mensagens diretas no seu Discord.'
+    - ''
+  wrong-code:
+    - ''
+    - ' &cCódigo incorreto! Verifique sua DM e tente novamente.'
+    - ''
+  expired:
+    - ''
+    - ' &cCódigo inválido ou expirado!'
+    - ''
+  request:
+    - ''
+    - ' &aVincular ao Discord'
+    - ' &fHouve uma solicitação para vincular sua conta &a{player} &fao Discord &a{discord_tag}'
+    - ' &fAo se vincular você receberá seus cargos especiais e suas recompensas!'
+    - ' <click:run_command:/vinculardc confirm>&a&lCONFIRME</click> &7- <click:run_command:/vinculardc deny>&c&lRECUSE</click>'
+    - ''
+  help:
+    - ''
+    - '&aComandos disponíveis:'
+    - ''
+    - ' &8> &a/discord &8- &7Abre o menu principal.'
+    - ' &8> &a/discord help &8- &7Exibe esta mensagem.'
+    - ' &8> &a/vinculardc &8- &7Vincula seu discord ao mine.'
+    - ' &8> &a/desvinculardc &8- &7Desvincula seu discord.'
+    - ''
+  help-Admin:
+    - ''
+    - '&aComandos disponíveis:'
+    - ''
+    - ' &8> &a/discord &8- &7Abre o menu principal.'
+    - ' &8> &a/discord help &8- &7Exibe esta mensagem.'
+    - ' &8> &a/discord reload &8- &7Recarrega as configurações do plugin.'
+    - ' &8> &a/vinculardc (player) (ID) &8- &7Vincula um ID a outro jogador.'
+    - ' &8> &a/desvinculardc (player) &8- &7Desvincula o discord de um jogador.'
+    - ''

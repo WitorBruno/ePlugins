@@ -1,0 +1,49 @@
+#
+#    /\/\   ___  ___ ___  __ _  __ _  ___  ___
+#   /    \ / _ \/ __/ __|/ _` |/ _` |/ _ \/ __|
+#  / /\/\ \  __/\__ \__ \ (_| | (_| |  __/\__ \
+#  \/    \/\___||___/___/\__,_|\__, |\___||___/
+#                              |___/
+# Mensagens gerais do plugin
+
+messages:
+ syntax: '&cUse: /{command} {syntax}'
+ target: '&cJogador &f{player} &cnão encontrado.'
+ number: '&cO argumento não é um número.'
+ permission: '&cVocê não tem permissão para fazer isto.'
+ console: '&cApenas jogadores in-game podem realizar esta ação.'
+ cancelled: '&cVocê cancelou a ação.'
+ reload: '&aConfigurações recarregadas com sucesso.'
+ inv-full: '&cSeu inventário está cheio.'
+ world-blacklist: '&cVocê não pode abrir caixas neste mundo!'
+ box-command: '&cVocê não pode executar comandos enquanto estiver abrindo uma caixa.'
+ help:
+   - ''
+   - '&aComandos disponíveis:'
+   - ''
+   - ' &8> &a/caixa &8- &7Ve todas as caixas.'
+   - ' &8> &a/caixa ver <caixa> &8- &7Ve uma caixa especifica.'
+   - ' &8> &a/caixa help &8- &7Exibe esta mensagem.'
+   - ''
+ help-Admin:
+   - ''
+   - '&aComandos disponíveis:'
+   - ''
+   - ' &8> &a/caixa &8- &7Ve todas as caixas.'
+   - ' &8> &a/caixa ver <caixa> &8- &7Ve uma caixa especifica.'
+   - ' &8> &a/caixa help &8- &7Exibe esta mensagem.'
+   - ' &8> &a/caixa give <all/player> <caixa> <quantia> &8- &7Da uma caixa ao jogador, ou a todos online.'
+   - ' &8> &a/caixa reload &8- &7Recarrega as configurações do plugin.'
+   - ''
+ box-list:
+   - ''
+   - '&cCaixa não encontrada.'
+   - '&cCaixas disponíveis: &f{list}'
+   - ''
+ box-give: '&aVocê deu &7{amount}x {box} &apara o jogador &7{player}&a.'
+ box-give-all: '&aVocê deu &7{amount}x &7{box}&a para todos os jogadores online.'
+ box-received: '&aVocê recebeu &7{amount}x {box}&a.'
+ box-received-all:
+   - ''
+   - '&aO jogador &f{player} &adeu a todos os jogadores online &7{amount}x &7{box}.'
+   - ''

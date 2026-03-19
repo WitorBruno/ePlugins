@@ -1,0 +1,52 @@
+#
+#    /\/\   ___  ___ ___  __ _  __ _  ___  ___
+#   /    \ / _ \/ __/ __|/ _` |/ _` |/ _ \/ __|
+#  / /\/\ \  __/\__ \__ \ (_| | (_| |  __/\__ \
+#  \/    \/\___||___/___/\__,_|\__, |\___||___/
+#                              |___/
+# Mensagens gerais do plugin
+
+messages:
+ syntax: '&cUse: /{command} {syntax}'
+ permission: '&cVocê não tem permissão para fazer isto.'
+ console: '&cEste comando só pode ser usado por jogadores.'
+ reload: '&aConfigurações recarregadas com sucesso.'
+ plots: '&cVocê só pode construir torres de cactos em plots!'
+ option-invalid: '&cOpção inválida. Use &f&non&r &cpara ativar ou &f&noff&r &cpara desativar.'
+ world-blacklist: '&cVocê não pode colocar torres de cacto neste mundo!'
+ time: '&cVocê deve esperar &f{time} &cantes de usar novamente!'
+ block-aim: '&cVocê precisa mirar em um bloco!'
+ tower-completed: '&aTorre de cactos construída com sucesso!'
+ number: '&cO argumento não é um número.'
+ target: '&cJogador &f{player} &cnão encontrado.'
+ preview-enabled: '&aVisualização prévia das torres ativada!'
+ preview-already-enabled: '&aA visualização prévia já está ativada!'
+ preview-disabled: '&cVisualização prévia das torres desativada!'
+ preview-already-disabled: '&cA visualização prévia já está desativada!'
+ tower-received: '&aVocê recebeu &f{amount} &aitens da &f{tower}'
+ tower-give: '&aVocê deu &f{amount} &aitens da &f{tower} &apara &f{player}.'
+ tower-give-all:
+   - ''
+   - '&aO usuário &f{player}&a deu &f{amount} &aitens de &f{tower} &apara todos os jogadores online.'
+   - ''
+ structure-list: 
+   - ''
+   - '&cEstrutura não encontrada.'
+   - '&cEstruturas disponíveis: &f[{list}]'
+   - ''
+ help:
+   - ''
+   - '&aComandos disponíveis:'
+   - ''
+   - ' &8> &a/cacto preview <on/off> &8 &7Ativa ou desativa a priview das torres de cacto.'
+   - ' &8> &a/cacto help &8- &7Exibe esta mensagem.'
+   - ''
+ help-admin:
+   - ''
+   - '&aComandos disponíveis:'
+   - ''
+   - ' &8> &a/cacto give <all/player> <torre> <quantia> &8- &7Da itens das torres para um jogador.'
+   - ' &8> &a/cacto preview <on/off> &8 &7Ativa ou desativa a priview das torres de cacto.'
+   - ' &8> &a/cacto reload &8- &7Recarrega a configuração do plugin.'
+   - ' &8> &a/cacto help &8- &7Exibe esta mensagem.'
+   - ''

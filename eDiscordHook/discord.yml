@@ -1,0 +1,175 @@
+Embeds:
+  vincular:
+    Title: 'Pedido de Vinculação de Conta'
+    Url: '' # URL clicável no título
+    Thumbnail: 'https://minotar.net/helm/{player}/100.png' # URL de imagem pequena (canto superior direito)
+    Image: '' # URL de imagem grande (corpo do embed)
+    Color: '#00A8FF'
+    Author:
+      Name: '' # Nome do autor
+      Url: '' # URL clicável no nome do autor
+      IconUrl: '' # Ícone do autor (imagem pequena ao lado do nome)
+    Footer:
+      Text: ' {data} às {hora}'
+      Image: ''
+    Description: 'Para completar a verificação, digite o código a seguir no chat do servidor'
+    Timestamp: '' # Use 'now' para timestamp atual, ou deixe vazio
+    Fields:
+      jogador:
+        Inline: true
+        Header: 'Jogador'
+        Content: '```{player}```'
+      codigo:
+        Inline: true
+        Header: 'Seu Código'
+        Content: '```{codigo}```'
+  vinculado:
+    Title: 'Vinculação de Conta'
+    Url: '' # URL clicável no título
+    Thumbnail: 'https://minotar.net/helm/{player}/100.png' # URL de imagem pequena (canto superior direito)
+    Image: '' # URL de imagem grande (corpo do embed)
+    Color: '#00A8FF'
+    Author:
+      Name: '' # Nome do autor
+      Url: '' # URL clicável no nome do autor
+      IconUrl: '' # Ícone do autor (imagem pequena ao lado do nome)
+    Footer:
+      Text: ' {data} às {hora}'
+      Image: ''
+    Description: ''
+    Timestamp: '' # Use 'now' para timestamp atual, ou deixe vazio
+    Fields:
+      jogador:
+        Inline: true
+        Header: 'Jogador'
+        Content: '```{player}```'
+      estado:
+        Inline: true
+        Header: 'Estado'
+        Content: '```Vinculado com sucesso!```'
+  naoVinculado:
+    Title: 'Vinculação de Conta'
+    Url: '' # URL clicável no título
+    Thumbnail: 'https://minotar.net/helm/{player}/100.png' # URL de imagem pequena (canto superior direito)
+    Image: '' # URL de imagem grande (corpo do embed)
+    Color: '#00A8FF'
+    Author:
+      Name: '' # Nome do autor
+      Url: '' # URL clicável no nome do autor
+      IconUrl: '' # Ícone do autor (imagem pequena ao lado do nome)
+    Footer:
+      Text: ' {data} às {hora}'
+      Image: ''
+    Description: ''
+    Timestamp: '' # Use 'now' para timestamp atual, ou deixe vazio
+    Fields:
+      jogador:
+        Inline: true
+        Header: 'Jogador'
+        Content: '```{player}```'
+      estado:
+        Inline: true
+        Header: 'Estado'
+        Content: '```Você não vinculou em tempo.```'
+
+  # ─────────────────────────────────────────────────────────────────────────────
+  # Embeds de Eventos do Servidor
+  # Placeholders disponíveis:
+  #   {username}        - nome do jogador
+  #   {achievement}     - título da conquista (somente player-Achievement)
+  #   {deathmessage}    - causa da morte     (somente player-Death)
+  #   {botname}         - nome do bot
+  #   {data}            - data atual (dd/MM/yyyy)
+  #   {hora}            - hora atual (HH:mm:ss)
+  #   PlaceholderAPI também é suportado
+  # ─────────────────────────────────────────────────────────────────────────────
+
+  player-Join:
+    Enabled: true
+    Title: ''
+    Url: '' # URL clicável no título
+    Thumbnail: '' # URL de imagem pequena (canto superior direito)
+    Image: '' # URL de imagem grande (corpo do embed)
+    Color: '#008000'
+    Author:
+      Name: '{username} entrou no servidor!' # Nome do autor
+      Url: '' # URL clicável no nome do autor
+      IconUrl: 'https://minotar.net/helm/{player}/100.png' # Ícone do autor (imagem pequena ao lado do nome)
+    Footer:
+      Text: ' {data} às {hora}'
+      Image: ''
+    Description: ''
+    Timestamp: '' # Use 'now' para timestamp atual, ou deixe vazio
+    Fields: []
+
+  player-First-Join:
+    Enabled: true
+    Title: ''
+    Url: '' # URL clicável no título
+    Thumbnail: '' # URL de imagem pequena (canto superior direito)
+    Image: '' # URL de imagem grande (corpo do embed)
+    Color: '#008000'
+    Author:
+      Name: '{username} entrou no servidor pela primeira vez!' # Nome do autor
+      Url: '' # URL clicável no nome do autor
+      IconUrl: 'https://minotar.net/helm/{player}/100.png' # Ícone do autor (imagem pequena ao lado do nome)
+    Footer:
+      Text: ' {data} às {hora}'
+      Image: ''
+    Description: ''
+    Timestamp: '' # Use 'now' para timestamp atual, ou deixe vazio
+    Fields: []
+
+  player-Leave:
+    Enabled: true
+    Title: ''
+    Url: '' # URL clicável no título
+    Thumbnail: '' # URL de imagem pequena (canto superior direito)
+    Image: '' # URL de imagem grande (corpo do embed)
+    Color: '#ff0000'
+    Author:
+      Name: '{username} saiu do servidor!' # Nome do autor
+      Url: '' # URL clicável no nome do autor
+      IconUrl: 'https://minotar.net/helm/{player}/100.png' # Ícone do autor (imagem pequena ao lado do nome)
+    Footer:
+      Text: ' {data} às {hora}'
+      Image: ''
+    Description: ''
+    Timestamp: '' # Use 'now' para timestamp atual, ou deixe vazio
+    Fields: []
+
+  player-Death:
+    Enabled: true
+    Title: ''
+    Url: '' # URL clicável no título
+    Thumbnail: '' # URL de imagem pequena (canto superior direito)
+    Image: '' # URL de imagem grande (corpo do embed)
+    Color: '#ff0000'
+    Author:
+      Name: '{deathmessage}' # Nome do autor
+      Url: '' # URL clicável no nome do autor
+      IconUrl: 'https://minotar.net/helm/{player}/100.png' # Ícone do autor (imagem pequena ao lado do nome)
+    Footer:
+      Text: ' {data} às {hora}'
+      Image: ''
+    Description: ''
+    Timestamp: '' # Use 'now' para timestamp atual, ou deixe vazio
+    Fields: []
+
+  player-Achievement:
+    Enabled: true
+    Title: ''
+    Url: '' # URL clicável no título
+    Thumbnail: '' # URL de imagem pequena (canto superior direito)
+    Image: '' # URL de imagem grande (corpo do embed)
+    Color: '#008000'
+    Author:
+      Name: '{username} adquirio a conquista {achievement}!' # Nome do autor
+      Url: '' # URL clicável no nome do autor
+      IconUrl: 'https://minotar.net/helm/{player}/100.png' # Ícone do autor (imagem pequena ao lado do nome)
+    Footer:
+      Text: ' {data} às {hora}'
+      Image: ''
+    Description: ''
+    Timestamp: '' # Use 'now' para timestamp atual, ou deixe vazio
+    Fields: []

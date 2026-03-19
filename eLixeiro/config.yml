@@ -1,0 +1,156 @@
+#        _     _          _           
+#    ___| |   (_)_  _____(_)_ __ ___  
+#   / _ \ |   | \ \/ / _ \ | '__/ _ \ 
+#  |  __/ |___| |>  <  __/ | | | (_) |
+#   \___|_____|_/_/\_\___|_|_|  \___/ 
+#                                   
+# By: Wittor_ (DC: _wittor ou Witu#7623)
+
+#      ___      _        _
+#     /   \__ _| |_ __ _| |__   __ _ ___  ___
+#    / /\ / _` | __/ _` | '_ \ / _` / __|/ _ \
+#   / /_// (_| | || (_| | |_) | (_| \__ \  __/
+#  /___,' \__,_|\__\__,_|_.__/ \__,_|___/\___|
+#
+# Configurações do banco de dados.
+
+database:
+  # Determina o tipo de banco de dados. Valores válidos: [SQLITE, MYSQL]
+  storage-type: SQLITE
+
+  # Dados para conexão ao banco de dados MYSQL.
+  data:
+    # Endereço de conexão do banco de dados. [EX: 127.0.0.1]
+    host: localhost
+    # Porta de conexão do banco de dados. [EX: 3306]
+    port: 3306
+    # Nome do banco de dados a ser conectado. [EX: minecraft]
+    database: ''
+    # Usuário de conexão. [EX: root]
+    username: ''
+    # Senha do usuário de conexão: [EX: 123]
+    password: ''
+    
+# Tipo de formatos de quantia disponíveis: LETRA (K,M,B,T...) e NUMERO (100,00)
+formats-type: 'LETRA'
+
+general:
+  # Tempo para realizar a limpeza
+  # em segundos
+  time: 300
+  # Limpar itens
+  items: true
+  # Limpar entidades
+  entities: true
+  # Não limpar entidades renomeadas
+  blacklist-renamed: false
+  # Mundos que não serão limpos
+  world-blacklist: []
+  # Blacklist de items para não serem removidos
+  items-blacklist:
+    - 'BARRIER'
+  # Blacklist de entidades que não serão limpar
+  entities-blacklist:
+    - 'ARMOR_STAND'
+    - 'ENDER_CRYSTAL'
+    - 'FISHING_HOOK'
+    - 'FALLING_BLOCK'
+    - 'FIREBALL'
+    - 'FIREWORK'
+    - 'ITEM_FRAME'
+    - 'LEASH_HITCH'
+    - 'LIGHTNING'
+    - 'PAINTING'
+    - 'PRIMED_TNT'
+    - 'SMALL_FIREBALL'
+    - 'SPLASH_POTION'
+    - 'THROWN_EXP_BOTTLE'
+    - 'WEATHER'
+
+# Limitador de entidades por Chunk
+chunk-limiter:
+  # Ativar o sistema
+  enabled: false
+  # Entidades que serão limitadas
+  whitelist:
+    - 'COW:10'
+
+#Configuração dos sons
+sounds:
+  # Som que será enviado ao executar o /lixeiro
+  command: 'NOTE_PLING'
+  # Volume dos sons
+  volume: 1.0
+  # Volume de expansão dos sons
+  pitch: 1.0
+  # Sons que serão enviados a cada x tempo
+  timer:
+    - '120,NOTE_STICKS'
+    - '60,NOTE_STICKS'
+    - '30,NOTE_STICKS'
+    - '15,NOTE_STICKS'
+    - '10,NOTE_STICKS'
+    - '5,NOTE_STICKS'
+    - '4,NOTE_STICKS'
+    - '3,NOTE_STICKS'
+    - '2,NOTE_STICKS'
+    - '1,NOTE_STICKS'
+    - '0,NOTE_PLING'
+
+# Configurações das mensagens temporizadas
+message-timer:
+  # Mensagens que serão enviadas no chat a cada x segundos
+  # Utilize <nl> para uma nova linha (Mini-Messages permitido)
+  # Placeholder permitidas: {items_total}, {entities_total} e {total}
+  chat:
+    - '120, <nl>&eTodos os itens no chão serão removidos em &f2 &eminutos!<nl> &a♻ &fPara visualizar o tempo, digite <yellow><click:run_command:"/lixeiro">/lixeiro</click></yellow> <nl>'
+    - '60, <nl>&eTodos os itens no chão serão removidos em &f1 &eminuto!<nl> &a♻ &fPara visualizar o tempo, digite <yellow><click:run_command:"/lixeiro">/lixeiro</click></yellow> <nl>'
+    - '30, &eTodos os itens no chão serão removidos em &f30 &esegundos!'
+    - '15, &eTodos os itens no chão serão removidos em &f15 &esegundos!'
+    - '10, &eTodos os itens no chão serão removidos em &f10 &esegundos!'
+    - '5, &eTodos os itens no chão serão removidos em &f5 &esegundos!'
+    - '4, &eTodos os itens no chão serão removidos em &f4 &esegundos!'
+    - '3, &eTodos os itens no chão serão removidos em &f3 &esegundos!'
+    - '2, &eTodos os itens no chão serão removidos em &f2 &esegundos!'
+    - '1, &eTodos os itens no chão serão removidos em &f1 &esegundo!'
+    - '0, &eForam removidos &f{items_total}&e itens e &f{entities_total} &eentidades.'
+  # Mensagens que serão enviadas no actionbar a cada x segundos
+  actionbar:
+    - '120, &eTodos os itens no chão serão removidos em &f2 &eminutos!'
+    - '60, &eTodos os itens no chão serão removidos em &f1 &eminuto!'
+    - '30, &eTodos os itens no chão serão removidos em &f30 &esegundos!'
+    - '15, &eTodos os itens no chão serão removidos em &f15 &esegundos!'
+    - '10, &eTodos os itens no chão serão removidos em &f10 &esegundos!'
+    - '5, &eTodos os itens no chão serão removidos em &f5 &esegundos!'
+    - '4, &eTodos os itens no chão serão removidos em &f4 &esegundos!'
+    - '3, &eTodos os itens no chão serão removidos em &f3 &esegundos!'
+    - '2, &eTodos os itens no chão serão removidos em &f2 &esegundos!'
+    - '1, &eTodos os itens no chão serão removidos em &f1 &esegundo!'
+    - '0, &eForam removidos &f{items_total}&e itens e &f{entities_total} &eentidades.'
+  # Titles que serão enviados a cada x segundos
+  # Utilize <nl> para separar title de subtitle
+  title:
+    - '30,&eLixeiro<nl>&7Limpando em &f30 &7segundos.'
+    - '15,&eLixeiro<nl>&7Limpando em &f15 &7segundos.'
+    - '10,&eLixeiro<nl>&7Limpando em &f10 &7segundos.'
+    - '5,&eLixeiro<nl>&7Limpando em &f5 &7segundos.'
+    - '4,&eLixeiro<nl>&7Limpando em &f4 &7segundos.'
+    - '3,&eLixeiro<nl>&7Limpando em &f3 &7segundos.'
+    - '2,&eLixeiro<nl>&7Limpando em &f2 &7segundos.'
+    - '1,&eLixeiro<nl>&7Limpando em &f1 &7segundos.'
+    - '0,&eLixeiro<nl>&7Foram limpos &f{items_total} &7itens e &f{entities_total} &7entidades.'
+    
+# Formatos de quantia
+formats:
+  - ''
+  - 'K'
+  - 'M'
+  - 'B'
+  - 'T'
+  - 'Q'
+  - 'QQ'
+  - 'S'
+  - 'SS'
+  - 'O'
+  - 'N'
+  - 'D'

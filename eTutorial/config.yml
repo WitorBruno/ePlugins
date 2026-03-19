@@ -1,0 +1,76 @@
+#       _____      _             _       _ 
+#    __|_   _|   _| |_ ___  _ __(_) __ _| |
+#   / _ \| || | | | __/ _ \| '__| |/ _` | |
+#  |  __/| || |_| | || (_) | |  | | (_| | |
+#   \___||_| \__,_|\__\___/|_|  |_|\__,_|_|
+#                                         
+# Discord: discord.eplugins.com.br
+# Site: eplugins.com.br
+
+# Configuração do banco de dados
+database:
+  # Determina o tipo de banco de dados. Valores válidos: [SQLITE, MYSQL]
+  storage-type: SQLITE
+
+  # Dados para conexão ao banco de dados MYSQL.
+  data:
+    # Endereço de conexão do banco de dados. [EX: 127.0.0.1]
+    host: localhost
+    # Porta de conexão do banco de dados. [EX: 3306]
+    port: 3306
+    # Nome do banco de dados a ser conectado. [EX: minecraft]
+    database: ''
+    # Usuário de conexão. [EX: root]
+    username: ''
+    # Senha do usuário de conexão: [EX: 123]
+    password: ''
+    
+# Opções gerais do plugin
+options:
+  # A cada passo limpar o chat.
+  clear-chat: true
+
+  # Se true e o plugin nLogin estiver instalado, o plugin esperará
+  # o evento do nLogin de (registro/login) e então enviará o jogador ao tutorial.
+  # Se false: ignora totalmente a integração com nLogin.
+  force-register-nlogin: false
+
+  # Se true, o plugin usará o primeiro login padrão do servidor
+  # o evento (PlayerJoin) para enviar ao tutorial.
+  # Se false: não envia ao tutorial no primeiro login no servidor.
+  force-register: false
+
+  # Teleportar o jogador ao local anterior ao finalizar o tutorial
+  # caso false, teleportará até a saída
+  teleport-previous: false
+
+  # Lista de comandos executados no jogador, Após concluir o tutorial
+  commands: ['give {player} diamond 1']
+
+  # Sistema de recompensa
+  Reward:
+    # A recompensa somente vai ser entregue na primeira vez?
+    first-time: true
+    
+    # Recompensas entregues ao jogador quando concluir o tutorial
+    # chance,recompensa
+    rewards:
+      - '100,Reco1'
+    
+    # Mensagens enviadas apos concluir o tutorial
+    mensagens: 
+      chat: [ '', '&aObrigado por completar nosso tutorial.', '']
+      actionbar: '&aObrigado por completar nosso tutorial.'
+      title: '&aParabéns<nl>&7Você completou o tutorial!'
+      sound: 'LEVEL_UP'
+      
+#Opções de configuração do NPC
+NPC:
+  skin: 'Wittor_'
+  look: true
+  hologram:
+    height: 2.9
+    lines:
+      - '&a&lTUTORIAL'
+      - '&fRealize o tutorial para conhecer o server!'
+      - '&7(/tutorial)'

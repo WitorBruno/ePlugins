@@ -1,0 +1,82 @@
+#
+#    /\/\   ___  ___ ___  __ _  __ _  ___  ___
+#   /    \ / _ \/ __/ __|/ _` |/ _` |/ _ \/ __|
+#  / /\/\ \  __/\__ \__ \ (_| | (_| |  __/\__ \
+#  \/    \/\___||___/___/\__,_|\__, |\___||___/
+#                              |___/
+# Mensagens gerais do plugin
+
+messages:
+  syntax: '&cUse: /{command} {syntax}'
+  permission: '&cVocê não possui permissão para isto.'
+  number: '&cO argumento não é um número.'
+  cancel: '&cVocê cancelou a operação'
+  console: '&cApenas jogadores in-game podem realizar esta ação.'
+  reload: '&aConfiguração recarregada com sucesso!'
+  target: '&cJogador &f{player} &cnão encontrado.'
+  item-unplaced: '&cVocê não colocou nenhum item para enviar!'
+  item-collected: '&aVocê coletou &f{quantia} &aiten(s).'
+  item-delete: '&aIten(s) deletado com sucesso!'
+  item-give: '&aVocê enviou &f{quantia} &aiten(s) para o jogador &f{player}'
+  item-give-all: ['', '&aO jogador &f{player} &adeu &f{quantia} &aiten(s) para todos os jogadores online.', '']
+  item-sent-all: '&aVocê enviou &f{quantia} &aiten(s) para todos os jogadores online.'
+  self: '&cVocê não pode realizar esta operação em si mesmo.'
+  inv-full: '&cSeu inventário está cheio.'
+  item-return: '&aOs iten(s) foram devolvidos para o seu inventário.'
+  world: '&cVocê não pode coletar recompensas/itens neste mundo!'
+  region: '&cVocê não pode coletar recompensas/itens nesta região!'
+  reward-give: '&aVocê deu &f{quantia} &arecompensa(s) do tipo &f{recompensa}&a para o jogador &f{player}'
+  reward-give-all: ['', '&aO jogador &f{player} &adeu &f{quantia} &arecompensa(s) do tipo &f{recompensa}&a para todos os jogadores online.', '']
+  reward-sent-all: '&aVocê enviou &f{quantia} &arecompensa(s) do tipo &f{recompensa} &apara todos os jogadores online.'
+  reward-collected: '&aVocê coletou &f{quantia} &arecompensa(s) do tipo &f{recompensa}'
+  reward-delete: '&aRecompensa(s) deletado com sucesso!'
+  npc-set: '&a&lSUCESSO! &aO npc do correio foi criado!'
+  npc-delete: '&a&lSUCESSO! &aO npc do correio foi removido!'
+  item-received: 
+    - ''
+    - '&aVocê recebeu &f{quantia} &aiten(s) do jogador &f{player}'
+    - '&aAcesse &f/correio&a para recolher.'
+    - ''
+  reward-received: 
+    - '' 
+    - '&aVocê recebeu &f{quantia} &arecompensa(s) do tipo &f{recompensa}' 
+    - '&aAcesse &f/correio&a para recolher.' 
+    - ''
+  rewards-list:
+    - ''
+    - '&cRecompensa não encontrada!'
+    - '&cRecompensas disponíveis: &f[{list}]'
+    - ''
+  type:
+    - ''
+    - '&aDigite o nome do jogador que deseja enviar iten(s).'
+    - '&7Para cancelar, digite &ncancelar&7.'
+    - ''
+  has-reward-items:
+    - ''
+    - '&eVocê possui &f{total} &eencomendas no seu correio.'
+    - '&eRecompensas: &f{recompensas}'
+    - '&eItens: &f{itens}'
+    - '&eAcesse &f/correio&e para recolher tudo.'
+    - ''
+  help:
+    - ''
+    - '&aComandos disponíveis:'
+    - ''
+    - ' &8> &a/correio &8- &7Abre o menu principal.'
+    - ' &8> &a/correio enviar <player> &8- &7Envia itens à um jogador.'
+    - ' &8> &a/correio help &8- &7Exibe esta mensagem.'
+    - ''
+  help-admin:
+    - ''
+    - '&aComandos disponíveis:'
+    - ''
+    - ' &8> &a/correio &8- &7Abre o menu principal.'
+    - ' &8> &a/correio help &8- &7Exibe esta mensagem.'
+    - ' &8> &a/correio enviar <player> &8- &7Envia itens à um jogador.'
+    - ' &8> &a/correio enviartodos &8- &7Envia itens à todos os jogadores online.'
+    - ' &8> &a/correio give <all/player> <recompensa> <quantia> &8- &7Dá x recompensa(s) configurada à um jogador, ou a todos online.'
+    - ' &8> &a/correio reload &8- &7Recarrega as configurações do plugin.'
+    - ' &8> &a/correio setnpc &8- &7Cria o npc do plugin.'
+    - ' &8> &a/correio delnpc &8- &7Deleta o npc do plugin.'
+    - ''

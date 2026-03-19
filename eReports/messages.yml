@@ -1,0 +1,68 @@
+#
+#    /\/\   ___  ___ ___  __ _  __ _  ___  ___
+#   /    \ / _ \/ __/ __|/ _` |/ _` |/ _ \/ __|
+#  / /\/\ \  __/\__ \__ \ (_| | (_| |  __/\__ \
+#  \/    \/\___||___/___/\__,_|\__, |\___||___/
+#                              |___/
+# Mensagens gerais do plugin
+
+messages:
+  syntax: '&cUse: /{command} {syntax}'
+  permission: '&cVocê não possui permissão para isto.'
+  cancel: '&cVocê cancelou a operação'
+  reload: '&aConfiguração recarregada com sucesso!'
+  console: '&cApenas jogadores in-game podem realizar esta ação.'
+  target: '&cJogador não encontrado.'
+  self: '&cVocê não pode realizar esta operação em si mesmo.'
+  teleported: '&aVocê foi teleportado ao jogador &f{player}.'
+  reports-deleted: '&aReports do jogador &f{player} &afoi deletados!'
+  reported:
+    chat: [ '', '&aO jogador &f{player} &afoi reportado com sucesso!', '' ]
+    actionbar: '&aO jogador &f{player} &afoi reportado com sucesso!'
+    title: '&aJogador &f{player}<nl>&7Reportado com sucesso!'
+    sound: 'LEVEL_UP'
+  report-alert:
+    - ''
+    - '&aUma denúncia foi registrada contra o jogador &f{player}&a.'
+    - ''
+  report-again:
+    - ''
+    - '&aO jogador &f{player}&a foi denunciado novamente.'
+    - ''
+  report-entered:
+    - ''
+    - '&aO jogador &f{player}&a foi denúnciado anteriormente e logou novamente no servidor.'
+    - ''
+  link-invalid: '&cEste link não é permitido.'
+  report-staff: '&cVocê não pode reportar um staff.'
+  reason-success: '&aMotivo definido com sucesso!'
+  proof-success: '&aProva definida com sucesso!'
+  proof-copied: '&aProva copiada!'
+  max-caracteres: '&cVocê so pode definir um motivo com no maximo &f{max} &ccaracteres!'
+  delay: '&cVocê precisa esperar &f{delay} &cpara reportar o jogador novamente!'
+  reason-proof: '&cVocê deve definir um motivo e uma prova antes de confirmar!'
+  link:
+    - ''
+    - '&aDigite no chat o link da prova da denúncia.'
+    - '&7Para cancelar, digite &ncancelar&7.'
+    - ''
+  reason:
+    - ''
+    - '&aDigite no chat o motivo da denúncia.'
+    - '&7Para cancelar, digite &ncancelar&7.'
+    - ''
+  help:
+    - ''
+    - '&aComandos disponíveis:'
+    - ''
+    - ' &8> &a/report <jogador> &8- &7Reporta um jogador.'
+    - ''
+  help-admin:
+    - ''
+    - '&aComandos disponíveis:'
+    - ''
+    - ' &8> &a/report <jogador> &8- &7Reporta um jogador.'
+    - ' &8> &a/report list &8- &7Mostra o menu de jogadores reportados.'
+    - ' &8> &a/report help &8- &7Exibe esta mensagem.'
+    - ' &8> &a/report reload &8- &7Recarrega as configurações do plugin.'
+    - ''

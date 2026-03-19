@@ -1,0 +1,37 @@
+Draws:
+  VIP: # Nome do sorteio
+    # Permissão que caso o jogador a tenha, não irá participar do sorteio
+    # deixe '' (vazio) para não usar
+    Permission: 'esorteios.vip'
+    # Quantia de vezes que irá mandar a mensagem "drawing" até sortear
+    # Deixe 0 para ser a quantia de jogadores online no servidor
+    Times: 5
+    # Mensagens do sorteio
+    Messages:
+      # Mensagens que serão enviadas quando iniciar um sorteio
+      started:
+        chat: ['']
+        actionbar: '&eIniciando sorteio...'
+        title: '&eIniciando sorteio...'
+        sound: 'LEVEL_UP'
+      # Mensagens que serão enviadas quando o plugin estiver escolhendo um jogador
+      drawing:
+        chat: ['']
+        actionbar: '&eSorteando vencedor...'
+        title: '&6Sorteando...<nl>&e{player}'
+        sound: 'NOTE_PLING'
+      # Mensagens que serão enviadas no global
+      messages:
+        chat: [ '', '&6&lSORTEIO: &fO jogador &e{player}&f ganhou o sorteio do &eVIP&f!', '' ]
+        actionbar: '&6Vencedor do sorteio: &e{player}'
+        title: '&6Vencedor sorteado!<nl>&e{player}'
+        sound: 'LEVEL_UP'
+      # Mensagens que serão enviadas AO JOGADOR que ganhar o sorteio
+      private-messages:
+        chat: [ '', '&6&lSORTEIO: &fVocê ganhou o sorteio do &eVIP&f!', '' ]
+        actionbar: '&6Vencedor do sorteio: &e{player}'
+        title: '&6Vencedor sorteado!<nl>&e{player}'
+        sound: 'LEVEL_UP'
+    # chance,recompensa
+    Rewards:
+      - '100,Reco1'

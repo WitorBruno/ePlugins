@@ -1,0 +1,886 @@
+# Apague apenas os encantamentos que não for usar
+enchantments:
+  Efficiency: # Não mude este nome, ou o encantamento não será reconhecido
+    name: 'Eficiência'
+    # Nível da picareta necessário para poder evoluir o encantamento
+    pickaxe-level: 0
+    # order do ícone no menu
+    order: 1
+    # Aparecer no menu de evolução
+    show-menu: true
+    # Poder evoluir pagando no menu de evolução
+    can-buy: true
+    # Mostrar um ícone de infinito no lugar do nível
+    # do encantamento na lore
+    show-infinity: false
+    # Permissão para usar o encantamento
+    # Deixe vazio para não usar
+    permission: ''
+    # Permissão para comprar o encantamento
+    # Deixe vazio para não usar
+    permission-buy: ''
+    # Whitelist de skins que o encantamento irá funciona
+    # Deixe vazio para não usar
+    # Coloque a "order" da skin. Exemplo: [ 1 ]
+    skin-whitelist: ['']
+    # Mostrar o encantamento no menu caso o jogador não tenha a skin da whitelist
+    show-skin-whitelist: false
+    # Niveis do encantamento
+    level:
+      default: 0.0
+      max: 10.0 # Use -1 para ser infinito
+    # Preços default
+    prices-default:
+      price1:
+        provider: 'eminas'
+        price: 10000.0
+    # Preços por nivel
+    prices-perlevel:
+      price1:
+        provider: 'money'
+        price: 10000.0
+    # Preços para desencantar a feramenta
+    prices-disenchanting:
+      price1:
+        provider: 'money'
+        price: 9000.0
+      price2:
+        provider: 'eminas'
+        price: 100.0
+    displays: # Item que aparecerá no menu de evolução
+      he-can: # quando puder evoluir
+        material: 'DIAMOND_PICKAXE'
+        name: '&aEficiencia'
+        lore:
+          - '&7Este encantamento permite que você'
+          - '&7minere com mais agilidade.'
+          - ''
+          - '&f > Nível: &a{current}&f/&a{max}'
+          - ''
+          - '&f > Custo: &a{money} money'
+          - '&f > Nível necessário: &a{level}'
+          - ''
+          - '&7Botão &fESQUERDO &7Para evoluir 1x'
+          - '&7Botão &fDIREITO &7Para escolher a quantia de evolução'
+          - '&7Botão &fQ &7Para evoluir o possível'
+      cant: # quando não puder evoluir
+        material: 'DIAMOND_PICKAXE'
+        name: '&aEficiencia'
+        lore:
+          - '&7Este encantamento permite que você'
+          - '&7minere com mais agilidade.'
+          - ''
+          - '&f > Nível: &a{current}&f/&a{max}'
+          - ''
+          - '&f > Custo: &a{money} money'
+          - '&f > Nível necessário: &a{level}'
+          - ''
+          - '&cVocê não tem blocos ou nível suficientes.'
+      max: # quando já estiver no máximo
+        material: 'DIAMOND_PICKAXE'
+        name: '&aEficiencia'
+        lore:
+          - '&7Este encantamento permite que você'
+          - '&7minere com mais agilidade.'
+          - ''
+          - '&f > Nível: &a{current}&f/&a{max}'
+          - ''
+          - '&cVocê já está no máximo.'
+      permission: # quando não tiver permissão
+        material: 'DIAMOND_PICKAXE'
+        name: '&aEficiencia'
+        lore:
+          - '&7Este encantamento permite que você'
+          - '&7minere com mais agilidade.'
+          - ''
+          - '&f > Nível: &a{current}&f/&a{max}'
+          - ''
+          - '&cVocê não tem permissão para comprar esse encantamento.'
+
+  Fortune: # Não mude este nome, ou o encantamento não será reconhecido
+    name: 'Fortuna'
+    pickaxe-level: 0
+    order: 2
+    show-menu: true
+    can-buy: true
+    show-infinity: false
+    permission: ''
+    permission-buy: ''
+    skin-whitelist: ['']
+    show-skin-whitelist: false
+    level:
+      default: 0.0
+      max: 10.0
+    prices-default:
+      price1:
+        provider: 'money'
+        price: 10000.0
+    prices-perlevel:
+      price1:
+        provider: 'money'
+        price: 10000.0
+    prices-disenchanting:
+      price1:
+        provider: 'money'
+        price: 9000.0
+      price2:
+        provider: 'eminas'
+        price: 100.0
+    displays:
+      he-can:
+        material: 'GOLD_INGOT'
+        name: '&aFortuna'
+        lore:
+          - '&7Este encantamento permite que você'
+          - '&7ganhe mais ao minerar.'
+          - ''
+          - '&f > Nível: &a{current}&f/&a{max}'
+          - ''
+          - '&f > Custo: &a{money} money'
+          - '&f > Nível necessário: &a{level}'
+          - ''
+          - '&7Botão &fESQUERDO &7Para evoluir 1x'
+          - '&7Botão &fDIREITO &7Para escolher a quantia de evolução'
+          - '&7Botão &fQ &7Para evoluir o possível'
+      cant:
+        material: 'GOLD_INGOT'
+        name: '&aFortuna'
+        lore:
+          - '&7Este encantamento permite que você'
+          - '&7ganhe mais ao minerar.'
+          - ''
+          - '&f > Nível: &a{current}&f/&a{max}'
+          - ''
+          - '&f > Custo: &a{money} money'
+          - '&f > Nível necessário: &a{level}'
+          - ''
+          - '&cVocê não tem blocos ou nível suficientes.'
+      max:
+        material: 'GOLD_INGOT'
+        name: '&aFortuna'
+        lore:
+          - '&7Este encantamento permite que você'
+          - '&7ganhe mais ao minerar.'
+          - ''
+          - '&f > Nível: &a{current}&f/&a{max}'
+          - ''
+          - '&cVocê já está no máximo.'
+      permission:
+        material: 'GOLD_INGOT'
+        name: '&aFortuna'
+        lore:
+          - '&7Este encantamento permite que você'
+          - '&7ganhe mais ao minerar.'
+          - ''
+          - '&f > Nível: &a{current}&f/&a{max}'
+          - ''
+          - '&cVocê não tem permissão para comprar esse encantamento.'
+
+  Nuclear: # Não mude este nome, ou o encantamento não será reconhecido
+    name: 'Nuclear'
+    pickaxe-level: 0
+    order: 3
+    show-menu: true
+    can-buy: true
+    show-infinity: false
+    permission: ''
+    permission-buy: ''
+    skin-whitelist: ['']
+    show-skin-whitelist: false
+    mensagens:
+      title: '&cNuclear<nl>&cativado'
+      actionbar: ''
+      chat: ['']
+      sound: 'EXPLODE'
+    level:
+      default: 0.0
+      max: 10.0
+      percentage: 0.00015
+    prices-default:
+      price1:
+        provider: 'money'
+        price: 10000.0
+    prices-perlevel:
+      price1:
+        provider: 'money'
+        price: 10000.0
+    prices-disenchanting:
+      price1:
+        provider: 'money'
+        price: 9000.0
+      price2:
+        provider: 'eminas'
+        price: 100.0
+    displays:
+      he-can:
+        material: 7faf3efbff6d7ef465ecacbc517f4dad5cc1a2261ea7a609f216aae48784
+        name: '&aNuclear'
+        lore:
+          - '&7Este encantamento permite que você'
+          - '&7tenha chances de quebrar a mina inteira.'
+          - ''
+          - '&f > Nível: &a{current}&f/&a{max}'
+          - '&f > Porcentagem atual: &a{percentage}%'
+          - ''
+          - '&f > Custo: &a{money} money | {eminas}'
+          - '&f > Nível necessário: &a{level}'
+          - ''
+          - '&7Botão &fESQUERDO &7Para evoluir 1x'
+          - '&7Botão &fDIREITO &7Para escolher a quantia de evolução'
+          - '&7Botão &fQ &7Para evoluir o possível'
+      cant:
+        material: 7faf3efbff6d7ef465ecacbc517f4dad5cc1a2261ea7a609f216aae48784
+        name: '&aNuclear'
+        lore:
+          - '&7Este encantamento permite que você'
+          - '&7tenha chances de quebrar a mina inteira.'
+          - ''
+          - '&f > Nível: &a{current}&f/&a{max}'
+          - '&f > Porcentagem atual: &a{percentage}%'
+          - ''
+          - '&f > Custo: &a{money} money | {eminas}'
+          - '&f > Nível necessário: &a{level}'
+          - ''
+          - '&cVocê não tem blocos ou nível suficientes.'
+      max:
+        material: 7faf3efbff6d7ef465ecacbc517f4dad5cc1a2261ea7a609f216aae48784
+        name: '&aNuclear'
+        lore:
+          - '&7Este encantamento permite que você'
+          - '&7tenha chances de quebrar a mina inteira.'
+          - ''
+          - '&f > Nível: &a{current}&f/&a{max}'
+          - '&f > Porcentagem atual: &a{percentage}%'
+          - ''
+          - '&cVocê já está no máximo.'
+      permission:
+        material: 7faf3efbff6d7ef465ecacbc517f4dad5cc1a2261ea7a609f216aae48784
+        name: '&aNuclear'
+        lore:
+          - '&7Este encantamento permite que você'
+          - '&7tenha chances de quebrar a mina inteira.'
+          - ''
+          - '&f > Nível: &a{current}&f/&a{max}'
+          - '&f > Porcentagem atual: &a{percentage}%'
+          - ''
+          - '&cVocê não tem permissão para comprar esse encantamento.'
+
+  Destruidor: # Não mude este nome, ou o encantamento não será reconhecido
+    name: 'Destruidor'
+    pickaxe-level: 0
+    order: 4
+    show-menu: true
+    can-buy: true
+    show-infinity: false
+    permission: ''
+    permission-buy: ''
+    skin-whitelist: ['']
+    show-skin-whitelist: false
+    mensagens:
+      title: '&cDestruidor<nl>&cativado'
+      actionbar: ''
+      chat: ['']
+      sound: 'EXPLODE'
+    level:
+      default: 0.0
+      max: 10.0
+      percentage: 0.00015
+    prices-default:
+      price1:
+        provider: 'money'
+        price: 10000.0
+      price2:
+        provider: 'eminas'
+        price: 100.0
+    prices-perlevel:
+      price1:
+        provider: 'money'
+        price: 10000.0
+      price2:
+        provider: 'eminas'
+        price: 100.0
+    prices-disenchanting:
+      price1:
+        provider: 'money'
+        price: 9000.0
+      price2:
+        provider: 'eminas'
+        price: 100.0
+    displays:
+      he-can:
+        material: 8da332abde333a15a6c6fcfeca83f0159ea94b68e8f274bafc04892b6dbfc
+        name: '&aDestruidor'
+        lore:
+          - '&7Este encantamento permite que você'
+          - '&7tenha chances de quebrar a camada inteira.'
+          - '&7de blocos.'
+          - ''
+          - '&f > Nível: &a{current}&f/&a{max}'
+          - '&f > Porcentagem atual: &a{percentage}%'
+          - ''
+          - '&f > Custo: &a{money} money | {eminas}'
+          - '&f > Nível necessário: &a{level}'
+          - ''
+          - '&7Botão &fESQUERDO &7Para evoluir 1x'
+          - '&7Botão &fDIREITO &7Para escolher a quantia de evolução'
+          - '&7Botão &fQ &7Para evoluir o possível'
+      cant:
+        material: 8da332abde333a15a6c6fcfeca83f0159ea94b68e8f274bafc04892b6dbfc
+        name: '&aDestruidor'
+        lore:
+          - '&7Este encantamento permite que você'
+          - '&7tenha chances de quebrar a camada inteira.'
+          - '&7de blocos.'
+          - ''
+          - '&f > Nível: &a{current}&f/&a{max}'
+          - '&f > Porcentagem atual: &a{percentage}%'
+          - ''
+          - '&f > Custo: &a{money} money | {eminas}'
+          - '&f > Nível necessário: &a{level}'
+          - ''
+          - '&cVocê não tem blocos ou nível suficientes.'
+      max:
+        material: 8da332abde333a15a6c6fcfeca83f0159ea94b68e8f274bafc04892b6dbfc
+        name: '&aDestruidor'
+        lore:
+          - '&7Este encantamento permite que você'
+          - '&7tenha chances de quebrar a camada inteira.'
+          - '&7de blocos.'
+          - ''
+          - '&f > Nível: &a{current}&f/&a{max}'
+          - '&f > Porcentagem atual: &a{percentage}%'
+          - ''
+          - '&cVocê já está no máximo.'
+      permission:
+        material: 8da332abde333a15a6c6fcfeca83f0159ea94b68e8f274bafc04892b6dbfc
+        name: '&aDestruidor'
+        lore:
+          - '&7Este encantamento permite que você'
+          - '&7tenha chances de quebrar a camada inteira.'
+          - '&7de blocos.'
+          - ''
+          - '&f > Nível: &a{current}&f/&a{max}'
+          - '&f > Porcentagem atual: &a{percentage}%'
+          - ''
+          - '&cVocê não tem permissão para comprar esse encantamento.'
+
+  Velocidade: # Não mude este nome, ou o encantamento não será reconhecido
+    name: 'Velocidade'
+    pickaxe-level: 0
+    order: 5
+    show-menu: true
+    can-buy: true
+    show-infinity: false
+    permission: ''
+    permission-buy: ''
+    skin-whitelist: ['']
+    show-skin-whitelist: false
+    level:
+      default: 0.0
+      max: 1.0
+    prices-default:
+      price1:
+        provider: 'money'
+        price: 10000.0
+    prices-perlevel:
+      price1:
+        provider: 'money'
+        price: 10000.0
+    prices-disenchanting:
+      price1:
+        provider: 'money'
+        price: 9000.0
+      price2:
+        provider: 'eminas'
+        price: 100.0
+    displays:
+      he-can:
+        material: 'FEATHER'
+        name: '&aVelocidade'
+        lore:
+          - '&7Este encantamento permite que você'
+          - '&7tenha o efeito de Velocidade na mina.'
+          - ''
+          - '&f > Nível: &a{current}&f/&a{max}'
+          - ''
+          - '&f > Custo: &a{money} money | {eminas}'
+          - '&f > Nível necessário: &a{level}'
+          - ''
+          - '&7Botão &fESQUERDO &7Para evoluir 1x'
+          - '&7Botão &fDIREITO &7Para escolher a quantia de evolução'
+          - '&7Botão &fQ &7Para evoluir o possível'
+      cant:
+        material: 'FEATHER'
+        name: '&aVelocidade'
+        lore:
+          - '&7Este encantamento permite que você'
+          - '&7tenha o efeito de Velocidade na mina.'
+          - ''
+          - '&f > Nível: &a{current}&f/&a{max}'
+          - ''
+          - '&f > Custo: &a{money} money | {eminas}'
+          - '&f > Nível necessário: &a{level}'
+          - ''
+          - '&cVocê não tem blocos ou nível suficientes.'
+      max:
+        material: 'FEATHER'
+        name: '&aVelocidade'
+        lore:
+          - '&7Este encantamento permite que você'
+          - '&7tenha o efeito de Velocidade na mina.'
+          - ''
+          - '&f > Nível: &a{current}&f/&a{max}'
+          - ''
+          - '&cVocê já está no máximo.'
+      permission:
+        material: 'FEATHER'
+        name: '&aVelocidade'
+        lore:
+          - '&7Este encantamento permite que você'
+          - '&7tenha o efeito de Velocidade na mina.'
+          - ''
+          - '&f > Nível: &a{current}&f/&a{max}'
+          - ''
+          - '&cVocê não tem permissão para comprar esse encantamento.'
+
+  Pressa: # Não mude este nome, ou o encantamento não será reconhecido
+    name: 'Pressa'
+    pickaxe-level: 0
+    order: 6
+    show-menu: true
+    can-buy: true
+    show-infinity: false
+    permission: ''
+    permission-buy: ''
+    skin-whitelist: ['']
+    show-skin-whitelist: false
+    level:
+      default: 0.0
+      max: 1.0
+    prices-default:
+      price1:
+        provider: 'money'
+        price: 10000.0
+    prices-perlevel:
+      price1:
+        provider: 'money'
+        price: 10000.0
+    prices-disenchanting:
+      price1:
+        provider: 'money'
+        price: 9000.0
+      price2:
+        provider: 'eminas'
+        price: 100.0
+    displays:
+      he-can:
+        material: ae77ae4f3652f671203cf45ff3c7f7e6328e921c374a7a311b3e48444fd892
+        name: '&aPressa'
+        lore:
+          - '&7Este encantamento permite que você'
+          - '&7tenha o efeito de pressa na mina.'
+          - ''
+          - '&f > Nível: &a{current}&f/&a{max}'
+          - ''
+          - '&f > Custo: &a{money} money | {eminas}'
+          - '&f > Nível necessário: &a{level}'
+          - ''
+          - '&7Botão &fESQUERDO &7Para evoluir 1x'
+          - '&7Botão &fDIREITO &7Para escolher a quantia de evolução'
+          - '&7Botão &fQ &7Para evoluir o possível'
+      cant:
+        material: ae77ae4f3652f671203cf45ff3c7f7e6328e921c374a7a311b3e48444fd892
+        name: '&aPressa'
+        lore:
+          - '&7Este encantamento permite que você'
+          - '&7tenha o efeito de pressa na mina.'
+          - ''
+          - '&f > Nível: &a{current}&f/&a{max}'
+          - ''
+          - '&f > Custo: &a{money} money | {eminas}'
+          - '&f > Nível necessário: &a{level}'
+          - ''
+          - '&cVocê não tem blocos ou nível suficientes.'
+      max:
+        material: ae77ae4f3652f671203cf45ff3c7f7e6328e921c374a7a311b3e48444fd892
+        name: '&aPressa'
+        lore:
+          - '&7Este encantamento permite que você'
+          - '&7tenha o efeito de pressa na mina.'
+          - ''
+          - '&f > Nível: &a{current}&f/&a{max}'
+          - ''
+          - '&cVocê já está no máximo.'
+      permission:
+        material: ae77ae4f3652f671203cf45ff3c7f7e6328e921c374a7a311b3e48444fd892
+        name: '&aPressa'
+        lore:
+          - '&7Este encantamento permite que você'
+          - '&7tenha o efeito de pressa na mina.'
+          - ''
+          - '&f > Nível: &a{current}&f/&a{max}'
+          - ''
+          - '&cVocê não tem permissão para comprar esse encantamento.'
+
+  Explosao: # Não mude este nome, ou o encantamento não será reconhecido
+    name: 'Explosão'
+    pickaxe-level: 1
+    order: 7
+    show-menu: true
+    can-buy: true
+    show-infinity: false
+    permission: ''
+    permission-buy: ''
+    skin-whitelist: ['']
+    show-skin-whitelist: false
+    # Raio da ativação da explosão
+    # Recomendando valores baixos para não gerar lag ao servidor
+    ray:
+      X: 1
+      Y: 1
+      Z: 1
+      # A cada UP do encantamento aumenta o raio pelo valor abaixo!
+      # -1 para desativar
+      # Recomendando valores baixos para não gerar lag ao servidor
+      expand: 1
+    mensagens:
+      title: '&cExplosão<nl>&cativada'
+      actionbar: ''
+      chat: ['']
+      sound: 'EXPLODE'
+    level:
+      default: 0.0
+      max: 10.0
+      percentage: 0.01
+    prices-default:
+      price1:
+        provider: 'money'
+        price: 10000.0
+    prices-perlevel:
+      price1:
+        provider: 'money'
+        price: 5000.0
+      price2:
+        provider: 'eminas'
+        price: 255.0
+    prices-disenchanting:
+      price1:
+        provider: 'money'
+        price: 9000.0
+      price2:
+        provider: 'eminas'
+        price: 100.0
+    displays:
+      he-can:
+        material: 713b78b520781b5970c4e117274e9363e66721efd7bbe1959e266b98e37759ce
+        name: '&aExplosão'
+        lore:
+          - '&7Este encantamento permite que você'
+          - '&7tenha chances de quebrar um buraco.'
+          - ''
+          - '&f > Nível: &a{current}&f/&a{max}'
+          - '&f > Porcentagem atual: &a{percentage}%'
+          - ''
+          - '&f > Custo: &a{money} money | {eminas}'
+          - '&f > Nível necessário: &a{level}'
+          - ''
+          - '&7Botão &fESQUERDO &7Para evoluir 1x'
+          - '&7Botão &fDIREITO &7Para escolher a quantia de evolução'
+          - '&7Botão &fQ &7Para evoluir o possível'
+      cant:
+        material: 713b78b520781b5970c4e117274e9363e66721efd7bbe1959e266b98e37759ce
+        name: '&aExplosão'
+        lore:
+          - '&7Este encantamento permite que você'
+          - '&7tenha chances de quebrar um buraco.'
+          - ''
+          - '&f > Nível: &a{current}&f/&a{max}'
+          - '&f > Porcentagem atual: &a{percentage}%'
+          - ''
+          - '&f > Custo: &a{money} money | {eminas}'
+          - '&f > Nível necessário: &a{level}'
+          - ''
+          - '&cVocê não tem blocos ou nível suficientes.'
+      max:
+        material: 713b78b520781b5970c4e117274e9363e66721efd7bbe1959e266b98e37759ce
+        name: '&aExplosão'
+        lore:
+          - '&7Este encantamento permite que você'
+          - '&7tenha chances de quebrar um buraco.'
+          - ''
+          - '&f > Nível: &a{current}&f/&a{max}'
+          - '&f > Porcentagem atual: &a{percentage}%'
+          - ''
+          - '&cVocê já está no máximo.'
+      permission:
+        material: 713b78b520781b5970c4e117274e9363e66721efd7bbe1959e266b98e37759ce
+        name: '&aExplosão'
+        lore:
+          - '&7Este encantamento permite que você'
+          - '&7tenha chances de quebrar um buraco.'
+          - ''
+          - '&f > Nível: &a{current}&f/&a{max}'
+          - '&f > Porcentagem atual: &a{percentage}%'
+          - ''
+          - '&cVocê não tem permissão para comprar esse encantamento.'
+
+  Furadeira: # Não mude este nome, ou o encantamento não será reconhecido
+    name: 'Furadeira'
+    pickaxe-level: 0
+    order: 8
+    show-menu: true
+    can-buy: true
+    show-infinity: false
+    permission: ''
+    permission-buy: ''
+    skin-whitelist: ['']
+    show-skin-whitelist: false
+    mensagens:
+      title: '&cFuradeira<nl>&cativado'
+      actionbar: ''
+      chat: ['']
+      sound: ''
+    level:
+      default: 0.0
+      max: 10.0
+      percentage: 0.01
+    prices-default:
+      price1:
+        provider: 'money'
+        price: 10000.0
+    prices-perlevel:
+      price1:
+        provider: 'money'
+        price: 10000.0
+    prices-disenchanting:
+      price1:
+        provider: 'money'
+        price: 9000.0
+      price2:
+        provider: 'eminas'
+        price: 100.0
+    displays:
+      he-can:
+        material: b59a2e83f20260e9caac53b4b3a6566b92d7dda3c42313363fa25443052b93d
+        name: '&aFuradeira'
+        lore:
+          - '&7Este encantamento permite que você'
+          - '&7tenha chances de varar a mina a partir'
+          - '&7do bloco que você quebrou.'
+          - ''
+          - '&f > Nível: &a{current}&f/&a{max}'
+          - '&f > Porcentagem atual: &a{percentage}%'
+          - ''
+          - '&f > Custo: &a{money} money | {eminas}'
+          - '&f > Nível necessário: &a{level}'
+          - ''
+          - '&7Botão &fESQUERDO &7Para evoluir 1x'
+          - '&7Botão &fDIREITO &7Para escolher a quantia de evolução'
+          - '&7Botão &fQ &7Para evoluir o possível'
+      cant:
+        material: b59a2e83f20260e9caac53b4b3a6566b92d7dda3c42313363fa25443052b93d
+        name: '&aFuradeira'
+        lore:
+          - '&7Este encantamento permite que você'
+          - '&7tenha chances de varar a mina a partir'
+          - '&7do bloco que você quebrou.'
+          - ''
+          - '&f > Nível: &a{current}&f/&a{max}'
+          - '&f > Porcentagem atual: &a{percentage}%'
+          - ''
+          - '&f > Custo: &a{money} money | {eminas}'
+          - '&f > Nível necessário: &a{level}'
+          - ''
+          - '&cVocê não tem blocos ou nível suficientes.'
+      max:
+        material: b59a2e83f20260e9caac53b4b3a6566b92d7dda3c42313363fa25443052b93d
+        name: '&aFuradeira'
+        lore:
+          - '&7Este encantamento permite que você'
+          - '&7tenha chances de varar a mina a partir'
+          - '&7do bloco que você quebrou.'
+          - ''
+          - '&f > Nível: &a{current}&f/&a{max}'
+          - '&f > Porcentagem atual: &a{percentage}%'
+          - ''
+          - '&cVocê já está no máximo.'
+      permission:
+        material: b59a2e83f20260e9caac53b4b3a6566b92d7dda3c42313363fa25443052b93d
+        name: '&aFuradeira'
+        lore:
+          - '&7Este encantamento permite que você'
+          - '&7tenha chances de varar a mina a partir'
+          - '&7do bloco que você quebrou.'
+          - ''
+          - '&f > Nível: &a{current}&f/&a{max}'
+          - '&f > Porcentagem atual: &a{percentage}%'
+          - ''
+          - '&cVocê não tem permissão para comprar esse encantamento.'
+
+  Multiplicador: # Não mude este nome, ou o encantamento não será reconhecido
+    name: 'Multiplicador'
+    pickaxe-level: 0
+    order: 9
+    show-menu: true
+    can-buy: true
+    show-infinity: false
+    permission: ''
+    permission-buy: ''
+    skin-whitelist: ['']
+    show-skin-whitelist: false
+    level:
+      default: 0.0
+      max: 10.0
+      percentage: 0.05
+    prices-default:
+      price1:
+        provider: 'money'
+        price: 10000.0
+    prices-perlevel:
+      price1:
+        provider: 'money'
+        price: 10000.0
+    prices-disenchanting:
+      price1:
+        provider: 'money'
+        price: 9000.0
+      price2:
+        provider: 'eminas'
+        price: 100.0
+    displays:
+      he-can:
+        material: 5d8604b9e195367f85a23d03d9dd503638fcfb05b0032535bc43734422483bde
+        name: '&aMultiplicador'
+        lore:
+          - '&7Este encantamento permite que você'
+          - '&7ganhe mais blocos ao minerar.'
+          - ''
+          - '&f > Nível: &a{current}&f/&a{max}'
+          - '&f > Porcentagem atual: &a{percentage}%'
+          - ''
+          - '&f > Custo: &a{money} money | {eminas}'
+          - '&f > Nível necessário: &a{level}'
+          - ''
+          - '&7Botão &fESQUERDO &7Para evoluir 1x'
+          - '&7Botão &fDIREITO &7Para escolher a quantia de evolução'
+          - '&7Botão &fQ &7Para evoluir o possível'
+      cant:
+        material: 5d8604b9e195367f85a23d03d9dd503638fcfb05b0032535bc43734422483bde
+        name: '&aMultiplicador'
+        lore:
+          - '&7Este encantamento permite que você'
+          - '&7ganhe mais blocos ao minerar.'
+          - ''
+          - '&f > Nível: &a{current}&f/&a{max}'
+          - '&f > Porcentagem atual: &a{percentage}%'
+          - ''
+          - '&f > Custo: &a{money} money | {eminas}'
+          - '&f > Nível necessário: &a{level}'
+          - ''
+          - '&cVocê não tem blocos ou nível suficientes.'
+      max:
+        material: 5d8604b9e195367f85a23d03d9dd503638fcfb05b0032535bc43734422483bde
+        name: '&aMultiplicador'
+        lore:
+          - '&7Este encantamento permite que você'
+          - '&7ganhe mais blocos ao minerar.'
+          - ''
+          - '&f > Nível: &a{current}&f/&a{max}'
+          - '&f > Porcentagem atual: &a{percentage}%'
+          - ''
+          - '&cVocê já está no máximo.'
+      permission:
+        material: 5d8604b9e195367f85a23d03d9dd503638fcfb05b0032535bc43734422483bde
+        name: '&aMultiplicador'
+        lore:
+          - '&7Este encantamento permite que você'
+          - '&7ganhe mais blocos ao minerar.'
+          - ''
+          - '&f > Nível: &a{current}&f/&a{max}'
+          - '&f > Porcentagem atual: &a{percentage}%'
+          - ''
+          - '&cVocê não tem permissão para comprar esse encantamento.'
+
+  Eletricidade: # Não mude este nome, ou o encantamento não será reconhecido
+    name: 'Eletricidade'
+    pickaxe-level: 0
+    order: 10
+    show-menu: true
+    can-buy: true
+    show-infinity: false
+    permission: ''
+    permission-buy: ''
+    skin-whitelist: ['']
+    show-skin-whitelist: false
+    level:
+      default: 0.0
+      max: 10.0
+      percentage: 0.1
+    prices-default:
+      price1:
+        provider: 'money'
+        price: 10000.0
+    prices-perlevel:
+      price1:
+        provider: 'money'
+        price: 10000.0
+    prices-disenchanting:
+      price1:
+        provider: 'money'
+        price: 9000.0
+      price2:
+        provider: 'eminas'
+        price: 100.0
+    displays:
+      he-can:
+        material: 9ac52419b99025828c89fa825945e6948e45bb5a22e4425a59e9096e4c1ac38
+        name: '&aEletricidade'
+        lore:
+          - '&7Este encantamento permite que você'
+          - '&7ganhe mais energia ao minerar.'
+          - ''
+          - '&f > Nível: &a{current}&f/&a{max}'
+          - '&f > Porcentagem atual: &a{percentage}%'
+          - ''
+          - '&f > Custo: &a{money} money | {eminas}'
+          - '&f > Nível necessário: &a{level}'
+          - ''
+          - '&7Botão &fESQUERDO &7Para evoluir 1x'
+          - '&7Botão &fDIREITO &7Para escolher a quantia de evolução'
+          - '&7Botão &fQ &7Para evoluir o possível'
+      cant:
+        material: 9ac52419b99025828c89fa825945e6948e45bb5a22e4425a59e9096e4c1ac38
+        name: '&aEletricidade'
+        lore:
+          - '&7Este encantamento permite que você'
+          - '&7ganhe mais energia ao minerar.'
+          - ''
+          - '&f > Nível: &a{current}&f/&a{max}'
+          - '&f > Porcentagem atual: &a{percentage}%'
+          - ''
+          - '&f > Custo: &a{money} money | {eminas}'
+          - '&f > Nível necessário: &a{level}'
+          - ''
+          - '&cVocê não tem blocos ou nível suficientes.'
+      max:
+        material: 9ac52419b99025828c89fa825945e6948e45bb5a22e4425a59e9096e4c1ac38
+        name: '&aEletricidade'
+        lore:
+          - '&7Este encantamento permite que você'
+          - '&7ganhe mais energia ao minerar.'
+          - ''
+          - '&f > Nível: &a{current}&f/&a{max}'
+          - '&f > Porcentagem atual: &a{percentage}%'
+          - ''
+          - '&cVocê já está no máximo.'
+      permission:
+        material: 9ac52419b99025828c89fa825945e6948e45bb5a22e4425a59e9096e4c1ac38
+        name: '&aEletricidade'
+        lore:
+          - '&7Este encantamento permite que você'
+          - '&7ganhe mais energia ao minerar.'
+          - ''
+          - '&f > Nível: &a{current}&f/&a{max}'
+          - '&f > Porcentagem atual: &a{percentage}%'
+          - ''
+          - '&cVocê não tem permissão para comprar esse encantamento.'

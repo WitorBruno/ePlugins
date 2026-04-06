@@ -1,0 +1,229 @@
+#        __  __ _
+#    ___|  \/  (_)_ __   __ _ ___
+#   / _ \ |\/| | | '_ \ / _` / __|
+#  |  __/ |  | | | | | | (_| \__ \
+#   \___|_|  |_|_|_| |_|\__,_|___/
+#
+# By: Wittor_ (DC: _wittor ou Witu#7623)
+
+# Configuração do banco de dados
+database:
+  # Determina o tipo de banco de dados. Valores válidos: [SQLITE, MYSQL]
+  storage-type: SQLITE
+
+  # Dados para conexão ao banco de dados MYSQL.
+  data:
+    # Endereço de conexão do banco de dados. [EX: 127.0.0.1]
+    host: localhost
+    # Porta de conexão do banco de dados. [EX: 3306]
+    port: 3306
+    # Nome do banco de dados a ser conectado. [EX: minecraft]
+    database: ''
+    # Usuário de conexão. [EX: root]
+    username: ''
+    # Senha do usuário de conexão: [EX: 123]
+    password: ''
+
+# Tipo de formatos de quantia disponíveis: LETRA (K,M,B,T...) e NUMERO (100,00)
+formats-type: 'LETRA'
+
+# Opções gerais de configuração do plugin
+options:
+  # Resetar as minas ao carregá-las da config
+  load-reset: false
+  # Permissão para a venda automática
+  auto-sell-perm: ''
+  # Quantia que irá somar no nível da fortuna
+  # essencial para definir valores a partir da fortuna 1
+  fortune-increase: 0.1
+  # Fazer com que as Picaretas nunca quebre
+  infinity-pick: true
+  # Acumular todos os bônus que o jogador tem permissão?
+  accumulate-bonus: false
+  # Formatação dos bônus
+  formatter-bonus-has: '&b{bonus}%&7 ({display}&7)'
+  formatter-bonus-no-has: ''
+  # Formatação do stats
+  formatter-stats-yes: '&aAtivo'
+  formatter-stats-no: '&cDesativado'
+  # Formatação da barra de progresso
+  progress-bar:
+    amount: 10
+    symbol: ':'
+    color-yes: '&a'
+    color-no: '&7'
+  # Esconder o encantamento na lore da picareta caso o player desative ele
+  # caso esteja false, o encantamento ficará riscado na lore da picareta
+  hide-disabled: false
+  # Evoluir a picareta com a ação do botão direito
+  evolve-law: true
+  # Evoluir a picareta com a ação do botão Q
+  evolve-Q: true
+  # Máximo permitido para evoluir com Q
+  Q-max: 0
+  # Habilitar o menu de evolução ao interagir com a picareta sem shift
+  interact-evolution-no-shift: true
+  # Habilitar o menu de evolução ao interagir com a picareta com shift
+  interact-evolution-yes-shift: true
+  # Ativar a picareta custom
+  custom-pickaxe: true
+  # Resetar a picareta ao morrer por pvp
+  reset-death-PvP: true
+  # Bloquear de quebrar blocos da mina enquanto o inventário estiver cheio
+  inv-full: true
+  # Para evoluir as classes ele deverá seguir a ordem delas?
+  classe-order: true
+  # Dropar o EXP do auto-sell (para a picareta do minecraft, sem ser a customizada) no chão
+  exp-drop-ground: false
+  # Skin default da picareta
+  skin-default: ''
+  # Sistema de energia
+  energy:
+    # Ativar o sistema de energia
+    enable: true
+    # Quantia de energia por bloco quebrado
+    amount: 1
+    # Quantia de energia que irá aumentar a cada nível
+    by-level: 1000
+    # Ativar o sistema de dar encantamento aleatório
+    give-enchant: true
+    # Comandos que irá dar quando evoluir (quando ganhar enchant)
+    enchant-commands: ['give {player} diamond 1']
+    # Comandos que irá dar quando evoluir (quando não ganhar enchant)
+    commands-without-enchantment: ['give {player} stone 1']
+    # Enchants que poderão ser dados
+    # chance,encantamento
+    enchants:
+      - '10.0,Efficiency'
+      - '10.0,Fortune'
+      - '10.0,Nuclear'
+      - '10.0,Destruidor'
+      - '10.0,Velocidade'
+      - '10.0,Pressa'
+      - '10.0,Explosao'
+      - '10.0,Multiplicador'
+      - '10.0,Eletricidade'
+      - '10.0,Chaveiro'
+      - '10.0,Aventureiro'
+    # Mensagens
+    evolved-enchant:
+      - ''
+      - '&bSua picareta evoluiu de nível!'
+      - '&bEncantamento adquirido: &f+1 &bnível de &f{enchant}.'
+      - ''
+    evolved-without-enchant:
+      - ''
+      - '&bSua picareta evoluiu de nível!'
+      - '&cInfelizmente todos seus encantamentos estão no máximo.'
+      - ''
+  # Sistema de encantamento aleatório por chance
+  random-chance:
+    chance: 0
+    message:
+      - ''
+      - '&aParabéns! Você ganhou &f+1 &anível no encantamento &f{enchant}'
+      - ''
+  # Sistema de tags
+  tags:
+    blocks: '&b[B]'
+    broken-blocks: '&b[BQ]'
+    time: '&b[T]'
+  # Lista de comandos permitidos na mina
+  allowed-commands:
+    - '/g'
+    - '/l'
+    - '/mina'
+    - '/minerar'
+    - '/mine'
+    - '/minas'
+  # Lista de comandos para sair da mina
+  exit-commands:
+    - '/sair'
+    - '/spawn'
+    - '/exit'
+  scoreboard:
+    enable: true
+    title: '&b&lePlugins'
+    lines:
+      - '&7      Área de mineração'
+      - ''
+      - ' &fMina: &7{mine}'
+      - ' &fB. quebrados: &7{broken}'
+      - ' &fTempo Minerando: &7{time}'
+      - ''
+      - '&b Picareta'
+      - '&8  ❘&f Nível: &7{level}'
+      - '&8  ❘&f Energia: &7{energy}/{energy_next}'
+      - ''
+      - ' &fBlocos: &b❒{blocks}'
+      - ' &fCoins: &2$&a{money}'
+      - ''
+      - '&b       eplugins.com.br'
+  itens:
+    # Item de blocos ativável
+    block-item:
+      material: '76165af842d71dc58824c76af10416316a55acee5ac69ae11a81a65d4d453961'
+      name: '&f+{amount} &bBlocos'
+      lore:
+        - ''
+        - '&fQuantia: &b{amount}'
+        - ''
+        - '&7Clique com botão direito para ativar.'
+        - ''
+        - '&7Clique com shift + botão direito para compactar'
+        - '&7todos os seus blocos no inventário em 1 só.'
+        - ''
+    # Item da custompickaxe
+    pickaxe:
+      # Slot em que será setada a picareta do jogador
+      # Deixe -1 para setar no slot que o jogador está selecionado (Fazer ainda!!)
+      slot: 2
+      glow: true
+      material: 'DIAMOND_PICKAXE'
+      name: '&bPicareta &6[{broken}]'
+      lore:
+        - '&7Inquebrável ∞'
+        - '&7{enchants}'
+        - ''
+        - ' &fNível: &7{level}'
+        - ' &fEnergia: &7{energy}/{energy_next} &f({progressbar}&f)'
+    # # Item das classes
+    classes:
+      # Slot em que será setada a classe do jogador
+      # Deixe -1 para não usar
+      slot: 6
+      material: 'LEATHER_CHESTPLATE'
+      name: '&aClasses'
+      lore:
+        - '&7Upando sua classe você irá ganhar'
+        - '&7bônus na mineração, no ganho de'
+        - '&7coins e gemas.'
+        - ''
+        - '&fSua classe: &7{classe}'
+        - ''
+        - '&aClique para upar sua classe'
+      #Siga o exemplo abaixo para criar itens custom
+      # custom1:
+      # slot: 8
+      # material: 'BARRIER'
+      # name: '&cSair'
+      # lore: [ '&7Clique caso queria sair da mina.' ]
+      # left-command: 'mina sair' # Use {player} para passar o jogador
+      # right-command: 'mina sair' # Use {player} para passar o jogador
+      # left-perm: 'eminas.left-perm.custom1'
+      # right-perm: 'eminas.right-perm.custom1'
+
+# Formatação de money e quantia
+formats:
+  - ''
+  - 'K'
+  - 'M'
+  - 'B'
+  - 'T'
+  - 'Q'
+  - 'QQ'
+  - 'S'
+  - 'SS'
+  - 'O'
+  - 'N'
+  - 'D'

@@ -1,0 +1,71 @@
+boosters:
+  booster1:
+    # Duração do booster em segundos
+    time: 60
+    # Bônus de venda
+    bonus: 10.0
+    # Bônus de venda
+    bonus-block: 10.0
+    # Item que aparecerá nos menus.
+    preview:
+      material: 'EXP_BOTTLE'
+      name: '&aBooster de Mineração'
+      glow: true
+      lore:
+        - ''
+        - '&fTempo: &a{time}'
+        - '&fBônus de coins: &a{bonus}%'
+        - '&fBônus de blocos: &a{bonus-block}%'
+        - ''
+        - '&fQuantia: &a{amount}'
+        - ''
+        - '&7Botão ESQUERDO: &fPara ativar 1x'
+        - '&7Botão DIREITO: &fPara coletar 1x.'
+        - '&7Botão Q: &fPara coletar todos.'
+    # Item do booster
+    item:
+      material: 'EXP_BOTTLE'
+      name: '&aBooster de Mineração'
+      glow: true
+      lore:
+        - ''
+        - '&fTempo: &a{time}'
+        - '&fBônus de coins: &a{bonus}%'
+        - '&fBônus de blocos: &a{bonus-block}%'
+        - ''
+        - '&aClique para ativar.'
+  booster2:
+    # Duração do booster em segundos
+    time: 120
+    # Bônus de venda
+    bonus: 20.0
+    # Bônus de venda
+    bonus-block: 20.0
+    # Item que aparecerá nos menus.
+    preview:
+      material: 'EXP_BOTTLE'
+      name: '&aBooster de Mineração'
+      glow: true
+      lore:
+        - ''
+        - '&fTempo: &a{time}'
+        - '&fBônus de coins: &a{bonus}%'
+        - '&fBônus de blocos: &a{bonus-block}%'
+        - ''
+        - '&fQuantia: &a{amount}'
+        - ''
+        - '&7Botão ESQUERDO: &fPara ativar 1x'
+        - '&7Botão DIREITO: &fPara coletar 1x.'
+        - '&7Botão Q: &fPara coletar todos.'
+    # Item do booster
+    item:
+      material: 'EXP_BOTTLE'
+      name: '&aBooster de Mineração'
+      glow: true
+      lore:
+        - ''
+        - '&fTempo: &a{time}'
+        - '&fBônus de coins: &a{bonus}%'
+        - '&fBônus de blocos: &a{bonus-block}%'
+        - ''
+        - '&aClique para ativar.'

@@ -1,0 +1,6 @@
+Bonus:
+  membro:
+    order: 1
+    permission: 'eminas.membro'
+    display: '&7&lMEMBRO'
+    bonus: 0.1 # em % do valor total

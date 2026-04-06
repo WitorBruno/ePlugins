@@ -1,0 +1,88 @@
+skins:
+  stone:
+    order: 1
+    material: 'STONE'
+    name: '&fPicareta de Pedra &6[{broken}]'
+    lore:
+      - '&7Inquebrável ∞'
+      - '&7{enchants}'
+      - ''
+      - ' &fNível: &7{level}'
+      - ' &fEnergia: &7{energy}/{energy_next} &f({progressbar}&f)'
+      - ''
+      - '&a+10% ( PEDRA )'
+    bonus-coins: 10.0
+    bonus-blocks: 10.0
+    allow-collect: true
+    skins-upgrade:
+      allow-interact-upgrade: true
+      chance: 50
+    item:
+      material: 'STONE_BUTTON'
+      name: '&aSkin de Pedra'
+      lore: ['&7Esta é a skin de pedra. Você é pobre.', '', '&fBônus: &a10%', '&fPrioridade: &a1', '', '&aClique para ativar']
+    buy:
+      enabled: true
+      message: '&aVocê comprou a skin Pedra por &f{money}&a.'
+      prices:
+        price1:
+          provider: 'money'
+          price: 50.0
+    menu:
+      equip:
+        material: 'STONE_BUTTON'
+        name: '&aSkin de Pedra'
+        lore: [ '&7Esta é a skin de pedra. Você é pobre.', '', '&fBônus: &a10%', '&fPrioridade: &a1', '', '&aClique para equipar', '&aUse Q para remover a skin' ]
+      equipped:
+        material: 'STONE_BUTTON'
+        name: '&aSkin de Pedra'
+        lore: [ '&7Esta é a skin de pedra. Você é pobre.', '', '&fBônus: &a10%', '&fPrioridade: &a1', '', '&aJá está equipada', '&aUse Q para desequipar a skin' ]
+      buy:
+        material: 'STONE_BUTTON'
+        name: '&aSkin de Pedra'
+        lore: [ '&7Esta é a skin de pedra. Você é pobre.', '', '&fBônus: &a10%', '&fPrioridade: &a1', '', ' &fPreço: &2$&a{money} coins', '', '&aClique para comprar.' ]
+  gold:
+    order: 2
+    material: 'GOLD'
+    name: '&fPicareta de Ouro &6[{broken}]'
+    lore:
+      - '&7Inquebrável ∞'
+      - '&7{enchants}'
+      - ''
+      - ' &fNível: &7{level}'
+      - ' &fEnergia: &7{energy}/{energy_next} &f({progressbar}&f)'
+      - ''
+      - '&a+20% ( OURO )'
+    bonus-coins: 20.0
+    bonus-blocks: 20.0
+    allow-collect: true
+    skins-upgrade:
+      allow-interact-upgrade: true
+      chance: 50
+    item:
+      material: 'GOLD_INGOT'
+      name: '&aSkin de Ouro'
+      lore: ['&7Esta é a skin de Ouro.', '', '&fBônus: &a20%', '&fPrioridade: &a2', '', '&aClique para ativar']
+    buy:
+      enabled: true
+      message: '&aVocê comprou a skin Ouro por &f{money} money &ae &f{eminas} blocos'
+      prices:
+        price1:
+          provider: 'money'
+          price: 100.0
+        price2:
+          provider: 'eminas'
+          price: 200.0
+    menu:
+      equip:
+        material: 'GOLD_INGOT'
+        name: '&aSkin de Ouro'
+        lore: [ '&7Esta é a skin de Ouro.', '', '&fBônus: &a20%', '&fPrioridade: &a2', '', '&aClique para equipar', '&aUse Q para remover a skin' ]
+      equipped:
+        material: 'GOLD_INGOT'
+        name: '&aSkin de Ouro'
+        lore: [ '&7Esta é a skin de Ouro.', '', '&fBônus: &a20%', '&fPrioridade: &a2', '', '&aJá está equipada', '&aUse Q para desequipar a skin' ]
+      buy:
+        material: 'GOLD_INGOT'
+        name: '&aSkin de Ouro'
+        lore: [ '&7Esta é a skin de Ouro.', '', '&fBônus: &a20%', '&fPrioridade: &a2', '', ' &fPreço: &2$&a{money} coins', ' &fPreço: &b{eminas} blocos', '', '&aClique para comprar.' ]

@@ -1,0 +1,188 @@
+# Você pode criar quantos quiser
+Custom-Enchantments:
+  Chaveiro:
+    name: 'Chaveiro'
+    pickaxe-level: 0
+    order: 11
+    show-menu: true
+    can-buy: true
+    show-infinity: false
+    permission: ''
+    permission-buy: ''
+    skin-whitelist: ['']
+    show-skin-whitelist: false
+    # chance,comando
+    commands:
+      - '20,give {player} tripwire_hook 1'
+    mensagens:
+      title: '&aChave<nl>&eencontrado!'
+      actionbar: ''
+      chat: ['']
+      sound: ''
+    level:
+      default: 1.0
+      max: 1.0
+      percentage: 0.0 # percentage adquirida por nível (ele acrescenta na chance do comando)
+    prices-default:
+      price1:
+        provider: 'money'
+        price: 10000.0
+    prices-perlevel:
+      price1:
+        provider: 'money'
+        price: 10000.0
+    prices-disenchanting:
+      price1:
+        provider: 'money'
+        price: 9000.0
+      price2:
+        provider: 'eminas'
+        price: 100.0
+    displays:
+      he-can:
+        material: 'TRIPWIRE_HOOK'
+        name: '&aChaveiro'
+        lore:
+          - '&7Este encantamento permite que você'
+          - '&7encontre chaves ao minerar.'
+          - ''
+          - '&f > Nível: &a{current}&f/&a{max}'
+          - '&f > percentage atual: &a{percentage}%'
+          - ''
+          - '&f > Custo: &a{money} money | {eminas}'
+          - '&f > Nível necessário: &a{level}'
+          - ''
+          - '&7Botão &fESQUERDO &7Para evoluir 1x'
+          - '&7Botão &fDIREITO &7Para escolher a quantia de evolução'
+          - '&7Botão &fQ &7Para evoluir o possível'
+      cant:
+        material: 'TRIPWIRE_HOOK'
+        name: '&aChaveiro'
+        lore:
+          - '&7Este encantamento permite que você'
+          - '&7encontre chaves ao minerar.'
+          - ''
+          - '&f > Nível: &a{current}&f/&a{max}'
+          - '&f > percentage atual: &a{percentage}%'
+          - ''
+          - '&f > Custo: &a{money} money | {eminas}'
+          - '&f > Nível necessário: &a{level}'
+          - ''
+          - '&cVocê não tem blocos ou nível suficientes.'
+      max:
+        material: 'TRIPWIRE_HOOK'
+        name: '&aChaveiro'
+        lore:
+          - '&7Este encantamento permite que você'
+          - '&7encontre chaves ao minerar.'
+          - ''
+          - '&f > Nível: &a{current}&f/&a{max}'
+          - '&f > percentage atual: &a{percentage}%'
+          - ''
+          - '&cVocê já está no máximo.'
+      permission:
+        material: 'TRIPWIRE_HOOK'
+        name: '&aChaveiro'
+        lore:
+          - '&7Este encantamento permite que você'
+          - '&7encontre chaves ao minerar.'
+          - ''
+          - '&f > Nível: &a{current}&f/&a{max}'
+          - '&f > percentage atual: &a{percentage}%'
+          - ''
+          - '&cVocê não tem permissão para comprar esse encantamento.'
+
+  Aventureiro:
+    name: 'Aventureiro'
+    pickaxe-level: 0
+    order: 12
+    show-menu: true
+    can-buy: true
+    show-infinity: false
+    permission: ''
+    permission-buy: ''
+    skin-whitelist: ['']
+    show-skin-whitelist: false
+    # chance,comando
+    commands:
+      - '20,give {player} quartz 1'
+    mensagens:
+      title: '&aLimite<nl>&eencontrado!'
+      actionbar: ''
+      chat: ['']
+      sound: ''
+    level:
+      default: 1.0
+      max: 1.0
+      percentage: 0.0 # percentage adquirida por nível (ele acrescenta na chance do comando)
+    prices-default:
+      price1:
+        provider: 'money'
+        price: 10000.0
+    prices-perlevel:
+      price1:
+        provider: 'money'
+        price: 10000.0
+    prices-disenchanting:
+      price1:
+        provider: 'money'
+        price: 9000.0
+      price2:
+        provider: 'eminas'
+        price: 100.0
+    displays:
+      he-can:
+        material: 'QUARTZ'
+        name: '&aAventureiro'
+        lore:
+          - '&7Este encantamento permite que você'
+          - '&7encontre limites ao minerar.'
+          - ''
+          - '&f > Nível: &a{current}&f/&a{max}'
+          - '&f > percentage atual: &a{percentage}%'
+          - ''
+          - '&f > Custo: &a{money} money | {eminas}'
+          - '&f > Nível necessário: &a{level}'
+          - ''
+          - '&7Botão &fESQUERDO &7Para evoluir 1x'
+          - '&7Botão &fDIREITO &7Para escolher a quantia de evolução'
+          - '&7Botão &fQ &7Para evoluir o possível'
+      cant:
+        material: 'QUARTZ'
+        name: '&aAventureiro'
+        lore:
+          - '&7Este encantamento permite que você'
+          - '&7encontre limites ao minerar.'
+          - ''
+          - '&f > Nível: &a{current}&f/&a{max}'
+          - '&f > percentage atual: &a{percentage}%'
+          - ''
+          - '&f > Custo: &a{money} money | {eminas}'
+          - '&f > Nível necessário: &a{level}'
+          - ''
+          - '&cVocê não tem blocos ou nível suficientes.'
+      max:
+        material: 'QUARTZ'
+        name: '&aAventureiro'
+        lore:
+          - '&7Este encantamento permite que você'
+          - '&7encontre limites ao minerar.'
+          - ''
+          - '&f > Nível: &a{current}&f/&a{max}'
+          - '&f > percentage atual: &a{percentage}%'
+          - ''
+          - '&cVocê já está no máximo.'
+      permission:
+        material: 'QUARTZ'
+        name: '&aAventureiro'
+        lore:
+          - '&7Este encantamento permite que você'
+          - '&7encontre limites ao minerar.'
+          - ''
+          - '&f > Nível: &a{current}&f/&a{max}'
+          - '&f > percentage atual: &a{percentage}%'
+          - ''
+          - '&cVocê não tem permissão para comprar esse encantamento.'
+
+
+# Crie mais encantamentos copiados os de cima

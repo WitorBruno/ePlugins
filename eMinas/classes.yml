@@ -1,0 +1,334 @@
+classes:
+  class1:
+    # O padrão é a ordem 0
+    order: 0
+    display: '&7Quartzo'
+    # Permissão para evoluir à esta classe
+    # Deixe '' (vazio) para não usar
+    permission: ''
+    # Efeito:Nível
+    effects: ['SPEED:1', 'JUMP:1']
+    # Bônus que serão dados
+    bonus:
+      coins: 10.0
+      blocks: 10.0
+    # Custos de evolução
+    costs:
+      price1:
+        provider: 'money'
+        price: 1000.0
+      price2:
+        provider: 'eminas'
+        price: 1000.0
+    # Itens das armaduras
+    armors:
+      helmet:
+        # cor da armadura
+        # Formato: RED:GREEN:BLUE (255:255:255)
+        # deixe RAINBOW para ser colorido
+        color: '255:44:44'
+        material: 'LEATHER_HELMET'
+        name: '&fClasse Quartzo'
+        lore:
+          - ''
+          - ' &7As classes irão te dar mais'
+          - ' &7coins e blocos ao minerar!'
+          - ''
+          - '&fBônus adquiridos:'
+          - '&7- +{coins}% de coins'
+          - '&7- +{blocks}% de blocos'
+          - ''
+      chestplate:
+        color: '255:44:44'
+        material: 'LEATHER_CHESTPLATE'
+        name: '&fClasse Quartzo'
+        lore:
+          - ''
+          - ' &7As classes irão te dar mais'
+          - ' &7coins e blocos ao minerar!'
+          - ''
+          - '&fBônus adquiridos:'
+          - '&7- +{coins}% de coins'
+          - '&7- +{blocks}% de blocos'
+          - ''
+      leggings:
+        color: '255:44:44'
+        material: 'LEATHER_LEGGINGS'
+        name: '&fClasse Quartzo'
+        lore:
+          - ''
+          - ' &7As classes irão te dar mais'
+          - ' &7coins e blocos ao minerar!'
+          - ''
+          - '&fBônus adquiridos:'
+          - '&7- +{coins}% de coins'
+          - '&7- +{blocks}% de blocos'
+          - ''
+      boots:
+        color: '255:44:44'
+        material: 'LEATHER_BOOTS'
+        name: '&fClasse Quartzo'
+        lore:
+          - ''
+          - ' &7As classes irão te dar mais'
+          - ' &7coins e blocos ao minerar!'
+          - ''
+          - '&fBônus adquiridos:'
+          - '&7- +{coins}% de coins'
+          - '&7- +{blocks}% de blocos'
+          - ''
+    # Itens do menu de classes
+    menu:
+      buy:
+        color: '255:44:44'
+        material: 'LEATHER_CHESTPLATE'
+        name: '&fClasse Quartzo'
+        lore:
+          - ''
+          - ' &7As classes irão te dar mais'
+          - ' &7coins e blocos ao minerar!'
+          - ''
+          - '&fBônus habilitados:'
+          - '&7- +{coins}% de coins'
+          - '&7- +{blocks}% de blocos'
+          - ''
+          - '&fCusto para evoluir:'
+          - '&7- &2$&a{money} coins'
+          - '&7- &b❒{eminas} blocos'
+          - ''
+          - '&aClique para evoluir'
+      has:
+        color: '255:44:44'
+        material: 'LEATHER_CHESTPLATE'
+        name: '&fClasse Quartzo'
+        lore:
+          - ''
+          - ' &7As classes irão te dar mais'
+          - ' &7coins e blocos ao minerar!'
+          - ''
+          - '&fBônus habilitados:'
+          - '&7- +{coins}% de coins'
+          - '&7- +{blocks}% de blocos'
+          - ''
+          - '&aClique para equipar.'
+      equipped:
+        color: '255:44:44'
+        material: 'LEATHER_CHESTPLATE'
+        name: '&fClasse Quartzo'
+        lore:
+          - ''
+          - ' &7As classes irão te dar mais'
+          - ' &7coins e blocos ao minerar!'
+          - ''
+          - '&fBônus habilitados:'
+          - '&7- +{coins}% de coins'
+          - '&7- +{blocks}% de blocos'
+          - ''
+          - '&aVocê está usando este.'
+      requirements:
+        color: '255:44:44'
+        material: 'LEATHER_CHESTPLATE'
+        name: '&fClasse Quartzo'
+        lore:
+          - ''
+          - ' &7As classes irão te dar mais'
+          - ' &7coins e blocos ao minerar!'
+          - ''
+          - '&fBônus habilitados:'
+          - '&7- +{coins}% de coins'
+          - '&7- +{blocks}% de blocos'
+          - ''
+          - '&fCusto para evoluir:'
+          - '&7- &2$&a{money} coins'
+          - '&7- &b❒{eminas} blocos'
+          - ''
+          - '&cVocê não possui os custos para evoluir.'
+      previous:
+        color: '255:44:44'
+        material: 'LEATHER_CHESTPLATE'
+        name: '&fClasse Quartzo'
+        lore:
+          - ''
+          - ' &7As classes irão te dar mais'
+          - ' &7coins e blocos ao minerar!'
+          - ''
+          - '&fBônus habilitados:'
+          - '&7- +{coins}% de coins'
+          - '&7- +{blocks}% de blocos'
+          - ''
+          - '&cVocê não possui a classe anterior.'
+      permission:
+        color: '255:44:44'
+        material: 'LEATHER_CHESTPLATE'
+        name: '&fClasse Quartzo'
+        lore:
+          - ''
+          - ' &7As classes irão te dar mais'
+          - ' &7coins e blocos ao minerar!'
+          - ''
+          - '&fBônus habilitados:'
+          - '&7- +{coins}% de coins'
+          - '&7- +{blocks}% de blocos'
+          - ''
+          - '&cVocê não possui permissão para comprar.'
+  class2:
+    order: 1
+    display: '&7Quartzo-1'
+    permission: ''
+    effects: ['SPEED:1', 'JUMP:1']
+    bonus:
+      coins: 15.0
+      blocks: 15.0
+    costs:
+      price1:
+        provider: 'money'
+        price: 1000.0
+      price2:
+        provider: 'eminas'
+        price: 1000.0
+    armors:
+      helmet:
+        color: '255:255:0'
+        material: 'LEATHER_HELMET'
+        name: '&fClasse Quartzo-1'
+        lore:
+          - ''
+          - ' &7As classes irão te dar mais'
+          - ' &7coins e blocos ao minerar!'
+          - ''
+          - '&fBônus adquiridos:'
+          - '&7- +{coins}% de coins'
+          - '&7- +{blocks}% de blocos'
+          - ''
+      chestplate:
+        color: '255:255:0'
+        material: 'LEATHER_CHESTPLATE'
+        name: '&fClasse Quartzo-1'
+        lore:
+          - ''
+          - ' &7As classes irão te dar mais'
+          - ' &7coins e blocos ao minerar!'
+          - ''
+          - '&fBônus adquiridos:'
+          - '&7- +{coins}% de coins'
+          - '&7- +{blocks}% de blocos'
+          - ''
+      leggings:
+        color: '255:255:0'
+        material: 'LEATHER_LEGGINGS'
+        name: '&fClasse Quartzo-1'
+        lore:
+          - ''
+          - ' &7As classes irão te dar mais'
+          - ' &7coins e blocos ao minerar!'
+          - ''
+          - '&fBônus adquiridos:'
+          - '&7- +{coins}% de coins'
+          - '&7- +{blocks}% de blocos'
+          - ''
+      boots:
+        color: '255:255:0'
+        material: 'LEATHER_BOOTS'
+        name: '&fClasse Quartzo-1'
+        lore:
+          - ''
+          - ' &7As classes irão te dar mais'
+          - ' &7coins e blocos ao minerar!'
+          - ''
+          - '&fBônus adquiridos:'
+          - '&7- +{coins}% de coins'
+          - '&7- +{blocks}% de blocos'
+          - ''
+    menu:
+      buy:
+        color: '255:255:0'
+        material: 'LEATHER_CHESTPLATE'
+        name: '&fClasse Quartzo-1'
+        lore:
+          - ''
+          - ' &7As classes irão te dar mais'
+          - ' &7coins e blocos ao minerar!'
+          - ''
+          - '&fBônus habilitados:'
+          - '&7- +{coins}% de coins'
+          - '&7- +{blocks}% de blocos'
+          - ''
+          - '&fCusto para evoluir:'
+          - '&7- &2$&a{money} coins'
+          - '&7- &b❒{eminas} blocos'
+          - ''
+          - '&aClique para evoluir'
+      has:
+        color: '255:255:0'
+        material: 'LEATHER_CHESTPLATE'
+        name: '&fClasse Quartzo-1'
+        lore:
+          - ''
+          - ' &7As classes irão te dar mais'
+          - ' &7coins e blocos ao minerar!'
+          - ''
+          - '&fBônus habilitados:'
+          - '&7- +{coins}% de coins'
+          - '&7- +{blocks}% de blocos'
+          - ''
+          - '&aClique para equipar.'
+      equipped:
+        color: '255:255:0'
+        material: 'LEATHER_CHESTPLATE'
+        name: '&fClasse Quartzo-1'
+        lore:
+          - ''
+          - ' &7As classes irão te dar mais'
+          - ' &7coins e blocos ao minerar!'
+          - ''
+          - '&fBônus habilitados:'
+          - '&7- +{coins}% de coins'
+          - '&7- +{blocks}% de blocos'
+          - ''
+          - '&aVocê está usando este.'
+      requirements:
+        color: '255:255:0'
+        material: 'LEATHER_CHESTPLATE'
+        name: '&fClasse Quartzo-1'
+        lore:
+          - ''
+          - ' &7As classes irão te dar mais'
+          - ' &7coins e blocos ao minerar!'
+          - ''
+          - '&fBônus habilitados:'
+          - '&7- +{coins}% de coins'
+          - '&7- +{blocks}% de blocos'
+          - ''
+          - '&fCusto para evoluir:'
+          - '&7- &2$&a{money} coins'
+          - '&7- &b❒{eminas} blocos'
+          - ''
+          - '&cVocê não possui os custos para evoluir.'
+      previous:
+        color: '255:255:0'
+        material: 'LEATHER_CHESTPLATE'
+        name: '&fClasse Quartzo-1'
+        lore:
+          - ''
+          - ' &7As classes irão te dar mais'
+          - ' &7coins e blocos ao minerar!'
+          - ''
+          - '&fBônus habilitados:'
+          - '&7- +{coins}% de coins'
+          - '&7- +{blocks}% de blocos'
+          - ''
+          - '&cVocê não possui a classe anterior.'
+      permission:
+        color: '255:255:0'
+        material: 'LEATHER_CHESTPLATE'
+        name: '&fClasse Quartzo-1'
+        lore:
+          - ''
+          - ' &7As classes irão te dar mais'
+          - ' &7coins e blocos ao minerar!'
+          - ''
+          - '&fBônus habilitados:'
+          - '&7- +{coins}% de coins'
+          - '&7- +{blocks}% de blocos'
+          - ''
+          - '&cVocê não possui permissão para comprar.'

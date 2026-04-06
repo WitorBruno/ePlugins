@@ -1,0 +1,30 @@
+rewards:
+  Reco1:
+    # Item que aparecerá no preview.
+    preview:
+      material: '76165af842d71dc58824c76af10416316a55acee5ac69ae11a81a65d4d453961'
+      name: '&a+100 Blocos'
+      lore:
+        - ''
+        - '&fVocê irá ganhar blocos de mineração!'
+        - ''
+        - '&aClique para adicionar uma chance.'
+        - '&aUse Q para remover a recompensa.'
+    # Só será dado o item se os comandos estiverem em false.
+    # Item que será dado ao jogador.
+    item:
+      material: 'STONE'
+      name: '&8Pedra'
+      amount: 1
+      lore: [ '&aEu valho muito!' ]
+      enchants: [ '' ]
+    # Só será executado o comando se o "Use" estiver em true.
+    # Comandos que serão executados no jogador.
+    command:
+      use: true # caso esteja em true o sistema de 'item' para de funcionar para os comandos listado no 'list' funcione
+      list: [ 'blocos add {player} 100' ]
+    # Mensagens que serão enviadas ao receber a recompensa
+    chat: [ '', '&a+100 Blocos', '' ]
+    title: '&a+100<nl>&aBlocos'
+    actionbar: ''
+    sounds: 'NOTE_STICKS'

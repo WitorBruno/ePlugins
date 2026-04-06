@@ -24,13 +24,13 @@ arrows:
 # Menu principal
 main:
   name: '&8Mina - Principal'
-  size: 45
-  go-exit-slot:  12
-  list-slot: 33
-  enchants-slot: 10
-  top-slot: 11
-  classe-slot: 13
-  booster-slot: 29
+  size: 27
+  go-exit-slot:  10
+  list-slot: 13
+  enchants-slot: 12
+  top-slot: 14
+  classe-slot: 15
+  booster-slot: 16
   items:
     go:
       material: 'e9e4bdcf172d5dc77c2bd4e37ad985399a9f2cdebf72463929ea4b666ef6f80'
@@ -78,7 +78,7 @@ main:
         - '&aClique para visualizar.'
     classe:
       material: 'LEATHER_CHESTPLATE'
-      name: '&bClasses'
+      name: '&aClasses'
       lore:
         - '&7Upando sua classe você irá ganhar'
         - '&7bônus na mineração, no ganho de'

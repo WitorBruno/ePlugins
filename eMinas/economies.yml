@@ -1,0 +1,58 @@
+#  _____                                  _
+# | ____| ___  ___  _ __   ___  _ __ ___ (_) ___  ___
+# |  _|  / __|/ _ \| '_ \ / _ \| '_ ` _ \| |/ _ \/ __|
+# | |___| (__| (_) | | | | (_) | | | | | | |  __/\__ \
+# |_____|\___|\___/|_| |_|\___/|_| |_| |_|_|\___||___/
+#
+
+# Providers disponíveis:
+#
+#   PlayerPoints, yPoints, eMinas
+#   yRankup, Vault
+#
+
+economies:
+  Money:
+    # Coloque o nome do plugin
+    # Para money deixe Money ou Vault
+    provider: 'Money'
+    # Formato inteiro
+    display: 'Dinheiro'
+    # Formato abreviado
+    abbreviated: 'coins'
+    # Símbolo para por nas mensagens
+    symbol: '&2$&a'
+    # Permitir aplicar a fortuna nessa economia
+    fortune: true
+    # ‘Item’ que aparecerá
+    item-settings:
+      material: '9fd108383dfa5b02e86635609541520e4e158952d68c1c8f8f200ec7e88642d'
+      name: '&aEconomia'
+      lore:
+        - ''
+        - ' &7Tipo de economia: &fMoney'
+        - ' &7Valor atual: &f{value}'
+        - ''
+        - '&aClique para alterar'
+  eMinas:
+    # Coloque o nome do plugin
+    # Para money deixe Money ou Vault
+    provider: 'eMinas'
+    # Formato inteiro
+    display: 'Blocos'
+    # Formato abreviado
+    abbreviated: 'blocos'
+    # Símbolo para por nas mensagens
+    symbol: '&b❒'
+    # Permitir aplicar a fortuna nessa economia
+    fortune: false
+    # ‘Item’ que aparecerá
+    item-settings:
+      material: '76165af842d71dc58824c76af10416316a55acee5ac69ae11a81a65d4d453961'
+      name: '&aEconomia'
+      lore:
+        - ''
+        - ' &7Tipo de economia: &fBlocos'
+        - ' &7Valor atual: &f{value}'
+        - ''
+        - '&aClique para alterar'

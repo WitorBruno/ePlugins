@@ -1,0 +1,11 @@
+# Itens que poderão ser usados no lugar na Pickaxe default
+tools:
+  spade:
+    material: 'DIAMOND_SPADE'
+    name: '&bPá &6[{broken}]'
+    lore:
+      - '&7Inquebrável ∞'
+      - '&7{enchants}'
+      - ''
+      - ' &fNível: &7{level}'
+      - ' &fEnergia: &7{energy}/{energy_next} &f({progressbar}&f)'
